@@ -731,12 +731,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors-V2-ndk.vendor:64
 
-# Graphics
-PRODUCT_PACKAGES += \
-    libEGL_angle \
-    libGLESv1_CM_angle \
-    libGLESv2_angle
-
 # Scudo
 PRODUCT_USE_SCUDO := true
 
