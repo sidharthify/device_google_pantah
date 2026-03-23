@@ -304,11 +304,6 @@ endif
 BOARD_KERNEL_CMDLINE += swiotlb=noforce
 
 # Kernel modules
-BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
-
-BOARD_KERNEL_CMDLINE += fips140.load_sequential=1
-BOARD_KERNEL_CMDLINE += exynos_drm.load_sequential=1
-
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules/modules.blocklist.vendor_kernel_boot
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor_kernel_boot))
 BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD += $(BOARD_VENDOR_KERNEL_RAMDISK_KERNEL_MODULES_LOAD_RAW)
