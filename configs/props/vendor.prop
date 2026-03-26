@@ -2,13 +2,28 @@
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+persist.vendor.audio.cca.enabled=false
 ro.audio.monitorRotation=true
 ro.audio.offload_wakelock=false
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 
+# audio
+audio.spatializer.effect.util_clamp_min=300
+ro.audio.spatializer_enabled=true
+
 # Battery
 vendor.battery_mitigation.aidl.enable=true
+
+# bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-opus
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.evb_bdaddr=22:22:22:33:44:55
+
+# Camera
+persist.vendor.camera.exif_reveal_make_model=true
+persist.vendor.camera.front_720P_always_binning=true
 
 # Codec2
 debug.c2.use_dmabufheaps=1
@@ -19,11 +34,25 @@ media.c2.dmabuf.padding=512
 media.c2.hal.selection=aidl
 ro.vendor.gpu.dataspace=1
 
+# DCK
+ro.gms.dck.se_capability=1
+
+# device family
+ro.build.device_family=P10C10L10
+
 # Display
 debug.hwc.winupdate=1
 debug.slsi_platform=1
 ro.vendor.ddk.set.afbc=1
+vendor.display.lbe.supported=1
 vendor.hwc.dpp.downscale=2
+
+# display
+vendor.primarydisplay.lhbm.frames_to_reach_peak_brightness=2
+
+# DRM
+drm.service.enabled=true
+media.mediadrmservice.enable=true
 
 # EdgeTPU
 vendor.edgetpu.cpu_scheduler.policy=FIFO
@@ -32,6 +61,12 @@ vendor.edgetpu.tflite_delegate.force_disable_io_coherency=0
 
 # Factory reset
 ro.crypto.metadata_init_delete_all_keys.enabled?=true
+
+# Fingerprint
+persist.vendor.udfps.als_feed_forward_supported=true
+persist.vendor.udfps.fps_touch_handler_supported=false
+persist.vendor.udfps.lhbm_controlled_in_hal_supported=true
+ro.vendor.fingerprint.ta.name=g7.app
 
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
@@ -55,6 +90,9 @@ vendor.pktrouter=1
 # IncrementalFS
 ro.incremental.enable=true
 
+# Media
+ro.odm.build.media_performance_class=33
+
 # OEM unlock
 ro.oem_unlock_supported=1
 
@@ -64,11 +102,16 @@ vendor.media.omx=0
 # Radio
 persist.vendor.radio.multisim_switch_support=true
 persist.vendor.ril.crash_handling_mode=2
+persist.vendor.ril.ecc.use.xml=1
+persist.vendor.ril.support_nr_ds=1
+persist.vendor.ril.use_radio_hal=2.0
 persist.vendor.sys.modem.logging.br_num=5
 persist.vendor.sys.modem.logging.enable=true
 ro.vendor.cbd.modem_removable=1
 ro.vendor.cbd.modem_type=s5100sit
+ro.vendor.config.build_carrier=europen
 ro.vendor.sys.modem.logging.loc=/data/vendor/slog
+vendor.rild.libpath=libsitril.so
 
 # SoC
 ro.soc.manufacturer=Google
@@ -97,6 +140,7 @@ ro.surface_flinger.display_update_imminent_timeout_ms=50
 ro.surface_flinger.enable_layer_caching=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.ignore_hdr_camera_layers=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.prime_shader_cache.ultrahdr=1
 ro.surface_flinger.protected_contents=true
@@ -112,6 +156,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 suspend.max_sleep_time_millis=40000
 suspend.short_suspend_backoff_enabled=true
 suspend.short_suspend_threshold_millis=2000
+
+# svn
+ro.vendor.build.svn=84
 
 # Telephony
 persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
@@ -129,9 +176,22 @@ telephony.active_modems.max_count=2
 # Thermal
 persist.vendor.enable.thermal.genl=true
 
+# UHDR Gore
+debug.hwui.enable_uhdr_gore=true
+
+# USB
+ro.usb.uvc.enabled=true
+
+# vibrator
+persist.vendor.vibrator.hal.chirp.enabled=0
+vendor.audio.hapticgenerator.distortion.output.gain=0.38
+
 # Watchdog
 framework_watchdog.fatal_count=3
 framework_watchdog.fatal_window.second=600
+
+# ZRAM
+vendor.zram.size=3g
 
 # Zygote
 zygote.critical_window.minute=10
