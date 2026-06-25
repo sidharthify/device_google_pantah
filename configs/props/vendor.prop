@@ -34,11 +34,11 @@ media.c2.dmabuf.padding=512
 media.c2.hal.selection=aidl
 ro.vendor.gpu.dataspace=1
 
+# Dalvik
+dalvik.vm.enable_time_based_gc_trigger=true
+
 # DCK
 ro.gms.dck.se_capability=1
-
-# device family
-ro.build.device_family=P10C10L10
 
 # Display
 debug.hwc.winupdate=1
@@ -72,7 +72,15 @@ ro.vendor.fingerprint.ta.name=g7.app
 ro.frp.pst=/dev/block/by-name/frp
 
 # Graphics
+debug.renderengine.graphite_preview_optin=true
 graphics.gpu.profiler.support=true
+graphics.gpu.profiler.support.gpu_counters.groups=true
+graphics.gpu.profiler.support.gpu_counters.period=true
+graphics.gpu.profiler.support.gpu_counters.zeroes_optimization=true
+graphics.gpu.profiler.support.gpu_counters=true
+graphics.gpu.profiler.support.gpu_frequency=true
+graphics.gpu.profiler.support.render_stages.queue_submit=true
+graphics.gpu.profiler.support.render_stages=true
 ro.egl.blobcache.multifile=true
 ro.egl.blobcache.multifile_limit=33554432
 ro.hardware.egl=mali
@@ -104,12 +112,13 @@ persist.vendor.radio.multisim_switch_support=true
 persist.vendor.ril.crash_handling_mode=2
 persist.vendor.ril.ecc.use.xml=1
 persist.vendor.ril.support_nr_ds=1
-persist.vendor.ril.use_radio_hal=2.0
+persist.vendor.ril.use_radio_hal=2.2
 persist.vendor.sys.modem.logging.br_num=5
 persist.vendor.sys.modem.logging.enable=true
 ro.vendor.cbd.modem_removable=1
 ro.vendor.cbd.modem_type=s5100sit
 ro.vendor.config.build_carrier=europen
+ro.vendor.ril.use_radio_hal=2.2
 ro.vendor.sys.modem.logging.loc=/data/vendor/slog
 vendor.rild.libpath=libsitril.so
 
@@ -158,7 +167,7 @@ suspend.short_suspend_backoff_enabled=true
 suspend.short_suspend_threshold_millis=2000
 
 # svn
-ro.vendor.build.svn=84
+ro.vendor.build.svn=93
 
 # Telephony
 persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
@@ -180,6 +189,7 @@ persist.vendor.enable.thermal.genl=true
 debug.hwui.enable_uhdr_gore=true
 
 # USB
+ro.usb.data_protection.disable_when_locked.supported=true
 ro.usb.uvc.enabled=true
 
 # vibrator
