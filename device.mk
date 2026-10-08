@@ -7,6 +7,10 @@
 #
 
 TARGET_LINUX_KERNEL_VERSION := 6.1
+TARGET_KERNEL_DIR := device/google/pantah-kernels/6.1/
+TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/kernel-headers
+TARGET_PREBUILT_KERNEL := device/google/pantah-kernels/6.1/Image.lz4
+
 PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
 TARGET_BOARD_PLATFORM := gs201
