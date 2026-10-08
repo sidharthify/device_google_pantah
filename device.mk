@@ -237,6 +237,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # 2. OpenMAX IL
 
 # setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Trusty (KM, GK, Storage)
