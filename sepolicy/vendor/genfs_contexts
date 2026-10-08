@@ -25,7 +25,9 @@ genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:0
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_extinfo u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/serial_number u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_extinfo u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/serial_number u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/min_vrefresh u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_idle u:object_r:sysfs_display:s0
