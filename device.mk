@@ -104,7 +104,11 @@ TARGET_USES_VULKAN = true
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.hardware.vulkan=mali
 
+# Mali Configuration Properties
 PRODUCT_VENDOR_PROPERTIES += \
+	vendor.mali.base_protected_tls_max=67108864 \
+	vendor.mali.platform_agt_frequency_khz=24576
+
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
 	frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
