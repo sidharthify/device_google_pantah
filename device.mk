@@ -620,6 +620,8 @@ PRODUCT_PACKAGES += \
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/sysconfig/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
@@ -630,6 +632,8 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
+
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
