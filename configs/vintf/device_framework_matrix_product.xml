@@ -44,6 +44,9 @@
             <instance>default</instance>
         </interface>
     </hal>
+        <name>com.google.edgetpu.dba</name>
+        <interface>
+            <name>IDevice</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -61,6 +64,7 @@
         </interface>
     </hal>
         <name>com.google.hardware.pixel.display</name>
+        <interface>
             <instance>default</instance>
         </interface>
     </hal>
