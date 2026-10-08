@@ -1,3 +1,4 @@
+user=_app isPrivApp=true name=com.google.pixel.digitalkey.timesync domain=vendor_cccdktimesync_app type=app_data_file levelFrom=all
 user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilservice_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice:remote domain=vendor_ims_remote_app levelFrom=all
