@@ -1,0 +1,3 @@
+allow euiccpixel_app sysfs_st33spi:dir search;
+allow euiccpixel_app sysfs_st33spi:file rw_file_perms;
+
