@@ -58,6 +58,8 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_ENABLE_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="cheetah-user 16 BP4A.251205.006 14401865 release-keys" \
+    BuildFingerprint=google/cheetah/cheetah:16/BP4A.251205.006/14401865:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
