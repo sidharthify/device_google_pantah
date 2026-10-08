@@ -96,6 +96,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 	ro.opengles.version=196610 \
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
+# This device is shipped with 33 (Android T)
+PRODUCT_SHIPPING_API_LEVEL := 33
+
 # Enforce the Product interface
 PRODUCT_PRODUCT_VNDK_VERSION := current
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
