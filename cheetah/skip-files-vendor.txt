@@ -912,7 +912,39 @@ lib64/libregex_automata.dylib.so
 # Completely skip files that are not required
 
 # Edge TPU
+bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
+etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 lib/libedgetpu_util.so
+
+# Proprietary logging services
+bin/dmd
+bin/hw/android.hardware.dumpstate.3-service
+bin/hw/android.hardware.gxp.logging@service-gxp-logging
+bin/hw/android.hardware.input.processor-service
+bin/hw/android.hardware.memtrack-service.pixel
+bin/hw/vendor.google.audiometricext@1.0-service-vendor
+bin/modem_logging_control
+bin/pixelstats-vendor
+bin/sscoredump
+bin/twoshay
+etc/init/android.hardware.dumpstate.3-service.rc
+etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
+etc/init/android.hardware.input.processor-service.rc
+etc/init/dmd.rc
+etc/init/init.modem_logging_control.rc
+etc/init/init.sscoredump.rc
+etc/init/memtrack.rc
+etc/init/pixelstats-vendor.gs201.rc
+etc/init/twoshay.rc
+etc/init/vendor.google.audiometricext@1.0-service-vendor.rc
+etc/pixelstats_config.json
+etc/twoshay_config.json
+etc/vintf/manifest/android.hardware.dumpstate.3-service.xml
+etc/vintf/manifest/dmd.xml
+etc/vintf/manifest/manifest_input.processor-service.xml
+etc/vintf/manifest/memtrack.xml
+lib64/libmemtrack-pixel.so
+lib64/vendor.google.audiometricext@1.0.so
 
 # Secure element
 lib/android.hardware.secure_element.thales.libse.so
