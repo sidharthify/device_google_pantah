@@ -8,9 +8,12 @@ init_daemon_domain(hal_usb_impl)
 
 set_prop(hal_usb_impl, vendor_usb_config_prop)
 
+allow hal_usb_impl device:dir r_dir_perms;
 allow hal_usb_impl functionfs:dir { watch watch_reads };
 allow hal_usb_impl fwk_stats_service:service_manager find;
 allow hal_usb_impl self:capability2 wake_alarm;
 allow hal_usb_impl sysfs_batteryinfo:dir r_dir_perms;
 allow hal_usb_impl sysfs_batteryinfo:file rw_file_perms;
 allow hal_usb_impl sysfs_usbc_throttling_stats:file r_file_perms;
+allow hal_usb_impl usb_device:chr_file rw_file_perms;
+allow hal_usb_impl usb_device:dir r_dir_perms;
