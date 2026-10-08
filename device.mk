@@ -376,6 +376,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay \
+    AvoidAppsInCutoutOverlay
+
 # NFC
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
