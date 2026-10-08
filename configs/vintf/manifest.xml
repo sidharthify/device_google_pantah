@@ -1,4 +1,7 @@
+    <hal format="aidl">
         <name>android.hardware.boot</name>
+        <fqname>IBootControl/default</fqname>
+    </hal>
         <name>android.hardware.media.c2</name>
         <name>android.hardware.media.c2</name>
     <hal format="hidl">
