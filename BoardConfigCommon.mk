@@ -286,7 +286,10 @@ AB_OTA_PARTITIONS += \
 # Verified Boot
 ifneq (user,$(TARGET_BUILD_VARIANT))
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+else ifneq (,$(wildcard vendor/yaap/signing/keys/releasekey.key))
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_KEY_PATH := vendor/yaap/signing/keys/releasekey.key
+else
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 endif
 
