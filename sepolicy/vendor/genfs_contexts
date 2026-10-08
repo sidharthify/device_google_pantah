@@ -115,6 +115,7 @@ genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
 genfscon sysfs /devices/platform/google,charger u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /kernel/pixel_em/active_profile u:object_r:sysfs_em_profile:s0
 genfscon sysfs /devices/platform/100a0000.MID u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100a0000.BIG u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100a0000.ISP u:object_r:sysfs_thermal:s0
