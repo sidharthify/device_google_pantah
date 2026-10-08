@@ -1,5 +1,6 @@
 set_prop(vendor_init, vendor_carrier_prop)
 set_prop(vendor_init, vendor_cbd_prop)
+set_prop(vendor_init, vendor_secure_element_prop)
 allow init boot_block_device:lnk_file relabelto;
 allow init custom_ab_block_device:lnk_file relabelto;
 allow init ram_device:blk_file w_file_perms;
