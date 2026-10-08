@@ -1,0 +1,18 @@
+hal_server_domain(hal_uwb_vendor_default, hal_uwb_vendor)
+
+add_service(hal_uwb_vendor_default, hal_uwb_vendor_service)
+
+binder_call(hal_uwb_vendor_client, hal_uwb_vendor_server)
+binder_call(hal_uwb_vendor_default, uwb_vendor_app)
+binder_call(hal_uwb_vendor_server, hal_uwb_vendor_client)
+binder_call(hal_uwb_vendor_server, servicemanager)
+
+hal_attribute_service(hal_uwb_vendor, hal_uwb_vendor_service)
+
+allow hal_uwb_vendor self:netlink_generic_socket create_socket_perms_no_ioctl;
+allow hal_uwb_vendor self:udp_socket create_socket_perms;
+allow hal_uwb_vendor_default kernel:process setsched;
+allow hal_uwb_vendor_default self:global_capability_class_set sys_nice;
+allow hal_uwb_vendor_default uwb_data_vendor:dir create_dir_perms;
+allow hal_uwb_vendor_default uwb_data_vendor:file create_file_perms;
+

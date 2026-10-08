@@ -1,0 +1,2 @@
+binder_call(uwb_vendor_app, hal_uwb_vendor_default)
+allow uwb_vendor_app hal_uwb_vendor_service:service_manager find;

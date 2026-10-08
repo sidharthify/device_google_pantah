@@ -74,6 +74,7 @@
 /mnt/vendor/persist/battery(/.*)? u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/modem(/.*)? u:object_r:persist_modem_file:s0
 /mnt/vendor/persist/ss(/.*)? u:object_r:persist_ss_file:s0
+/mnt/vendor/persist/uwb(/.*)? u:object_r:persist_uwb_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty u:object_r:hal_gatekeeper_default_exec:s0
@@ -83,6 +84,7 @@
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.3-service-vendor u:object_r:hal_wlc_exec:s0
 /vendor/bin/init\.radio\.sh u:object_r:init_radio_exec:s0
+/vendor/bin/init\.uwb\.calib\.sh u:object_r:vendor_uwb_init_exec:s0
 /vendor/bin/tcpdump_logger u:object_r:tcpdump_logger_exec:s0
 /vendor/bin/trusty_apploader u:object_r:trusty_apploader_exec:s0
 /vendor/bin/trusty_metricsd u:object_r:trusty_metricsd_exec:s0
