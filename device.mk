@@ -50,6 +50,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HWUI
 PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.vulkan=mali
+
 PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
