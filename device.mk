@@ -23,6 +23,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # From system.property
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=27 \
+	persist.vendor.ril.db_ecc.id.type=5
+
 # SIT-RIL Logging setting
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.ril.log_mask=3 \
