@@ -1,3 +1,4 @@
 allow kernel self:capability2 perfmon;
 allow kernel self:perf_event cpu;
+allow kernel vendor_fw_file:dir r_dir_perms;
 allow kernel vendor_fw_file:file r_file_perms;
