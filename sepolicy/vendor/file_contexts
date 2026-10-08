@@ -133,6 +133,7 @@
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service u:object_r:hal_secure_element_uicc_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.rust\.trusty u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty u:object_r:hal_keymint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.security\.secretkeeper\.trusty u:object_r:hal_secretkeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb-service u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget-service u:object_r:hal_usb_gadget_impl_exec:s0
 /vendor/bin/hw/disable_contaminant_detection\.sh u:object_r:disable-contaminant-detection-sh_exec:s0
