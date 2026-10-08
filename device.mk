@@ -308,7 +308,8 @@ PRODUCT_PACKAGES += \
 
 # VINTF
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(VENDOR_PATH)/proprietary/vendor/etc/vintf/manifest/manifest_mapper_framework.xml
 DEVICE_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 

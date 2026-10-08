@@ -88,9 +88,11 @@ def fix_vendor_file_list(file_list: FileList):
     for file_path in disable_checkelf_file_paths:
         file_list.get_file(file_path).set_arg(FileArgs.DISABLE_CHECKELF, True)
 
-    file_list.get_file('vendor/etc/vintf/manifest/manifest.xml').set_dst(
-        'vendor/etc/vintf/manifest/manifest_mapper_framework.xml'
-    )
+    # Merged through DEVICE_MANIFEST_FILE, a module named manifest.xml
+    # clashes with others and VINTF can't be installed with copy rules
+    manifest_file = file_list.get_file('vendor/etc/vintf/manifest/manifest.xml')
+    manifest_file.set_dst('vendor/etc/vintf/manifest/manifest_mapper_framework.xml')
+    manifest_file.set_arg(FileArgs.EXTRACT_ONLY, True)
 
     module_suffix_file_paths = [
         'vendor/lib64/android.frameworks.stats-V3-ndk.so',
