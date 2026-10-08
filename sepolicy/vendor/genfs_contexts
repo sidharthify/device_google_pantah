@@ -30,11 +30,14 @@ genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_name 
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/backlight u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
+genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/hysteresis_time u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/google,battery/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/cleared_time u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/google,cpm/power_supply/gcpm_pps/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/ring_buffer_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/trip_time u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0: u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/memory_exception u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/14700000.ufs/attributes/wb_avail_buf u:object_r:sysfs_scsi_devices_0000:s0
