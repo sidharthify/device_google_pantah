@@ -201,6 +201,12 @@ ifndef BOARD_VENDOR_KERNEL_MODULES_LOAD
 $(error vendor_dlkm.modules.load not found or empty)
 endif
 
+# staging kernels might have modules split between system/vendor_dlkm. If
+# the target defined modules on the system_dlkm image, honor the split.
+# Otherwise, assume all modules are stored on the vendor_dlkm image.
+ifneq ($(BOARD_SYSTEM_KERNEL_MODULES),)
+BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notdir $(BOARD_VENDOR_KERNEL_MODULES_LOAD)))
+else
 BOARD_VENDOR_KERNEL_MODULES := $(KERNEL_MODULES)
 endif
 
