@@ -97,6 +97,7 @@
 /dev/lwis-slc u:object_r:lwis_device:s0
 /dev/lwis-top u:object_r:lwis_device:s0
 /dev/lwis-votf u:object_r:lwis_device:s0
+/dev/maxfg_history u:object_r:battery_history_device:s0
 /dev/oem_ipc[0-7] u:object_r:radio_device:s0
 /dev/oem_test u:object_r:radio_test_device:s0
 /dev/umts_ipc0 u:object_r:radio_device:s0
