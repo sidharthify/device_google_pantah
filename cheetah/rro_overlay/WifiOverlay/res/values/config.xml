@@ -24,6 +24,9 @@
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
     <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
     
+    <!-- Wifi driver supports 6GHz band for softap -->
+    <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
+
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
 
