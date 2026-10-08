@@ -427,6 +427,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.device_unique_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.device_unique_attestation.xml
 
 # Call deleteAllKeys if vold detects a factory reset
+PRODUCT_VENDOR_PROPERTIES += ro.crypto.metadata_init_delete_all_keys.enabled?=true
+
 PRODUCT_PRODUCT_PROPERTIES += \
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
