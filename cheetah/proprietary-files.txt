@@ -60,6 +60,8 @@ product/etc/sysconfig/pixel_experience_2021.xml
 product/etc/sysconfig/pixel_experience_2021_midyear.xml
 product/etc/sysconfig/pixel_experience_2022.xml
 product/etc/sysconfig/pixel_experience_2022_midyear.xml
+product/etc/sysconfig/preinstalled-packages-merged-product.xml
+
 # Radio
 product/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml
 product/etc/permissions/com.android.sdm.plugins.connmo.xml
@@ -140,6 +142,8 @@ system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 
 # Permissions
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
+system_ext/etc/sysconfig/preinstalled-packages-merged-system_ext.xml
+
 # Radio
 system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
