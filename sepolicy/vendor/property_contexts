@@ -39,5 +39,6 @@ vendor.sys.modem_reset u:object_r:vendor_modem_prop:s0
 vendor.sys.rild_reset u:object_r:vendor_rild_prop:s0
 vendor.sys.silentlog. u:object_r:vendor_slog_prop:s0
 vendor.tcpdump. u:object_r:vendor_tcpdump_log_prop:s0
+vendor.uwb.calibration.country_code u:object_r:vendor_uwb_calibration_country_code:s0 exact string
 vendor.wlan.driver.version u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version u:object_r:vendor_wifi_version:s0

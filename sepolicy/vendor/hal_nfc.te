@@ -1,3 +1,4 @@
+get_prop(hal_nfc_default, vendor_uwb_calibration_country_code)
 get_prop(hal_nfc_default, vendor_uwb_calibration_prop)
 
 set_prop(hal_nfc_default, vendor_modem_prop)
