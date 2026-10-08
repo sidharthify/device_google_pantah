@@ -99,6 +99,7 @@
         </interface>
     </hal>
         <name>vendor.google.radioext</name>
+        <version>1.5</version>
         <interface>
             <name>IRadioExt</name>
             <instance>default</instance>
