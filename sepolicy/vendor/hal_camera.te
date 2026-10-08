@@ -20,6 +20,7 @@ allow hal_camera_default rls_service:service_manager find;
 allow hal_camera_default self:global_capability_class_set sys_nice;
 allow hal_camera_default sysfs_chip_id:file r_file_perms;
 allow hal_camera_default sysfs_devfreq_cur:file r_file_perms;
+allow hal_camera_default sysfs_display:file r_file_perms;
 allow hal_camera_default sysfs_edgetpu:dir r_dir_perms;
 allow hal_camera_default sysfs_edgetpu:file r_file_perms;
 allow hal_camera_default sysfs_leds:dir r_dir_perms;
