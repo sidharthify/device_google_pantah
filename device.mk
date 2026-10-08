@@ -268,6 +268,11 @@ PRODUCT_PACKAGES += \
 	update_engine_sideload \
 	update_verifier
 
+# Dexpreopt
+# Seedvault (system_ext) requires LocalContactsBackup (product), so its
+# odex would end up in system_other from two partitions
+$(call add-product-dex-preopt-module-config,LocalContactsBackup,disable)
+
 # pKVM
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 PRODUCT_BUILD_PVMFW_IMAGE := true
