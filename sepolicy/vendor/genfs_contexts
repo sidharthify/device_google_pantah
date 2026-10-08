@@ -49,6 +49,7 @@ genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled u:object_r:
 genfscon sysfs /devices/platform/14700000.ufs/hibern8_on_idle_enable u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/google,battery/power_supply/battery u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/google,cpm/power_supply/gcpm/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/com.google.usf/wakeup u:object_r:sysfs_wakeup:s0
