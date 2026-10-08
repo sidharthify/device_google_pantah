@@ -58,9 +58,15 @@ genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firm
 genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
 genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
+genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
 genfscon sysfs /devices/platform/google,charger u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/100a0000.MID u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100a0000.BIG u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100a0000.ISP u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.G3D u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/platform/100b0000.TPU u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/19000000.aoc u:object_r:sysfs_aoc:s0
 genfscon sysfs /devices/platform/acpm_stats u:object_r:sysfs_acpm_stats:s0
 genfscon sysfs /devices/platform/google,cpm u:object_r:sysfs_batteryinfo:s0
