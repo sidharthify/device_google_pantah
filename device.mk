@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: The Android Open Source Project
 PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
+TARGET_BOARD_PLATFORM := gs201
+
 AB_OTA_POSTINSTALL_CONFIG += \
 	RUN_POSTINSTALL_system=true \
 	POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -59,6 +61,8 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
 # Recovery files
 PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/init/init.recovery.gs201.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.gs201.rc
+
 # Fstab files
 # For creating dtbo image
 PRODUCT_HOST_PACKAGES += \
@@ -267,6 +271,8 @@ endif
 
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Google
+PRODUCT_VENDOR_PROPERTIES += ro.soc.model=GS201
+
 PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
