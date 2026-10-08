@@ -4,3 +4,6 @@ PRODUCT_PACKAGES += \
 
 # SKU specific RROs
 PRODUCT_PACKAGES += \
+    SettingsOverlayG03Z5 \
+    SettingsOverlayGQML3 \
+    SettingsOverlayGVU6C \
