@@ -153,3 +153,4 @@ genfscon sysfs /devices/soc0/revision u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/soc0/machine u:object_r:sysfs_soc:s0
 genfscon sysfs /thermal_zone14/mode u:object_r:sysfs_thermal:s0
 genfscon sysfs /module/bcmdhd4389 u:object_r:sysfs_bcmdhd:s0
+genfscon sysfs /wlan_ptracker u:object_r:sysfs_ptracker:s0
