@@ -148,3 +148,4 @@
         is when the system is in the suspended mode -->
     <bool translatable="false" name="config_wifiDtimMultiplierConfigEnabled">true</bool>
 
+    <!-- Boolean indicating whether the framework updates country from scan results when there is
