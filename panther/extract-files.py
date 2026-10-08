@@ -17,6 +17,7 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
+    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -42,6 +43,9 @@ lib_fixups: lib_fixups_user_type = {
         'com.google.edgetpu_app_service-V3-ndk',
         'com.google.edgetpu_vendor_service-V2-ndk',
     ): lib_fixup_vendor_suffix,
+    'android.hardware.sensors-V2-ndk': lib_fixup_remove,
+}
+
 blob_fixups: blob_fixups_user_type = {
     'product/etc/felica/common.cfg': blob_fixup()
         .patch_file('osaifu-keitai.patch'),
@@ -70,7 +74,9 @@ module = ExtractUtilsModule(
 
 def fix_vendor_file_list(file_list: FileList):
     # flp.default & gps.default have incorrect SONAME
+    # gpsd depends on android.hardware.sensors-V2-ndk & android.hardware.sensors-V3-ndk
     disable_checkelf_file_paths = [
+        'vendor/bin/hw/gpsd',
         'vendor/lib64/hw/flp.default.so',
         'vendor/lib64/hw/gps.default.so',
     ]
