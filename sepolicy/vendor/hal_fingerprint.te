@@ -1,4 +1,15 @@
 add_hwservice(hal_fingerprint_default, hal_fingerprint_ext_hwservice)
 
+get_prop(hal_fingerprint_default, fingerprint_ghbm_prop)
+
+r_dir_file(hal_fingerprint_default, sysfs_chosen)
+
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
 allow hal_fingerprint_default block_device:dir search;
+allow hal_fingerprint_default dmabuf_system_heap_device:chr_file r_file_perms;
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default fwk_stats_service:service_manager find;
+allow hal_fingerprint_default mfg_data_block_device:blk_file rw_file_perms;
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
