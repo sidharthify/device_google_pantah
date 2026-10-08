@@ -22,11 +22,13 @@
 <resources>
     <!-- Configure 13px of extra protection around the front-facing camera -->
     <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+        M 662,72
         a 57,57 0 1 0 114,0
         a 57,57 0 1 0 -114,0
         Z
     </string>
 
+    <!-- Camera 1 is the front camera on C10 -->
     <string translatable="false" name="config_protectedCameraId">1</string>
 
     <!-- Comma-separated list of packages to exclude from camera protection. In our case,
