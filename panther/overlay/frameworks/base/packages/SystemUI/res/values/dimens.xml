@@ -30,3 +30,4 @@
 
     <!-- Location on the screen of the center of the physical power button. -->
     <!-- Location on the screen of the center of the physical volume up/down buttons. -->
+    <!-- Padding for the lock icon on the keyguard. In pixels - should not scale with display size. -->

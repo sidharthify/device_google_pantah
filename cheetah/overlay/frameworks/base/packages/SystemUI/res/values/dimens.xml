@@ -17,5 +17,16 @@
 -->
 <resources>
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">0dp</dimen>
-</resources>
+    <dimen name="status_bar_padding_top">1px</dimen>
+
+    <!-- Height of the status bar header bar when on Keyguard (match status_bar_height) -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+
+    <!-- Camera 1 is the front camera -->
+    <string translatable="false" name="config_protectedCameraId">1</string>
+
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
+
+    <!-- Location on the screen of the center of the physical power button. -->
+    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
+    <!-- Padding for the lock icon on the keyguard. In pixels - should not scale with display size. -->

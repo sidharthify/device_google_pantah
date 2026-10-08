@@ -17,3 +17,21 @@
 */
 -->
 
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+    <!-- Configure 13px of extra protection around the front-facing camera -->
+    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+        a 57,57 0 1 0 114,0
+        a 57,57 0 1 0 -114,0
+        Z
+    </string>
+
+    <string translatable="false" name="config_protectedCameraId">1</string>
+
+    <!-- Comma-separated list of packages to exclude from camera protection. In our case,
+    ignore the gaze detection package -->
+    <string translatable="false" name="config_cameraProtectionExcludedPackages">com.google.android.as</string>
+
+    <bool name="config_enableDisplayCutoutProtection">true</bool>
+
