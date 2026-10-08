@@ -180,3 +180,6 @@
     <item>500</item>
     <item>440</item>
     <item>385</item>
+    <!-- UDFPS does not support gestures -->
+    <bool name="config_fingerprintSupportsGestures">false</bool>
+
