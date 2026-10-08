@@ -227,6 +227,7 @@ BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 
 BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
 
+BOARD_KERNEL_CMDLINE += fips140.load_sequential=1
 BOARD_KERNEL_CMDLINE += exynos_drm.load_sequential=1
 
 BOARD_WLAN_DEVICE := bcmdhd
