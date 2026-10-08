@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 	fstab.gs201-fips \
 	fstab.gs201-fips.vendor_ramdisk
 
+# Insmod config files
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,init.insmod.*.cfg,$(TARGET_KERNEL_DIR),$(TARGET_COPY_OUT_VENDOR_DLKM)/etc)
+
 # For creating dtbo image
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
