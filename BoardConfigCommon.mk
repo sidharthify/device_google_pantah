@@ -226,6 +226,13 @@ BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 # Protected VM firmware
 BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 
+# Partitions
+AB_OTA_PARTITIONS += \
+    vendor_dlkm
+
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
 BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
 
 BOARD_KERNEL_CMDLINE += fips140.load_sequential=1
