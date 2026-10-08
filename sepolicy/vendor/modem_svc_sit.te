@@ -19,5 +19,6 @@ allow modem_svc_sit modem_userdata_file:file create_file_perms;
 allow modem_svc_sit radio_device:chr_file rw_file_perms;
 allow modem_svc_sit radio_vendor_data_file:dir create_dir_perms;
 allow modem_svc_sit radio_vendor_data_file:file create_file_perms;
+allow modem_svc_sit sysfs_modem:file rw_file_perms;
 allow modem_svc_sit vendor_fw_file:dir search;
 allow modem_svc_sit vendor_fw_file:file r_file_perms;

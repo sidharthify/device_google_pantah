@@ -138,6 +138,7 @@ genfscon sysfs /devices/platform/gpio_keys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sound-aoc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
+genfscon sysfs /devices/platform/cp-tm1/cp_temp u:object_r:sysfs_modem:s0
 genfscon sysfs /devices/platform/google,charger u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /kernel/pixel_em/active_profile u:object_r:sysfs_em_profile:s0
