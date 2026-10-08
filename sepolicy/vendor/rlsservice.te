@@ -10,6 +10,8 @@ vndbinder_use(rlsservice)
 
 allow rlsservice aoc_device:chr_file rw_file_perms;
 allow rlsservice apex_info_file:file r_file_perms;
+allow rlsservice dumpstate:fd use;
+allow rlsservice dumpstate:fifo_file write;
 allow rlsservice mnt_vendor_file:dir search;
 allow rlsservice persist_camera_file:dir search;
 allow rlsservice persist_camera_file:file r_file_perms;
