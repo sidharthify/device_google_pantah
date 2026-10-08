@@ -22,6 +22,7 @@ genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_m
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/min_freq u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14520000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
