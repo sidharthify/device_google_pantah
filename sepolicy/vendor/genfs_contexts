@@ -18,7 +18,9 @@ genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_i
 genfscon sysfs /devices/platform/17000050.devfreq_cam/devfreq/17000050.devfreq_cam/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_mfc/cur_freq u:object_r:sysfs_devfreq_cur:s0
+genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/min_freq u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/14520000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
@@ -49,8 +51,11 @@ genfscon sysfs /devices/platform/google,battery/power_supply/battery u:object_r:
 genfscon sysfs /devices/platform/google,cpm/power_supply/gcpm/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.usf/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state u:object_r:sysfs_cpu:s0
+genfscon sysfs /devices/platform/19000000.aoc/usb_control/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
@@ -79,11 +84,14 @@ genfscon sysfs /devices/platform/exynos-drm/tui_status u:object_r:sysfs_display:
 genfscon sysfs /devices/platform/14700000.ufs/io_stats u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firmware:s0
 genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/sjtag_gsa/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/sjtag_ap/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
 genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
+genfscon sysfs /devices/platform/gpio_keys/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/sound-aoc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
 genfscon sysfs /devices/platform/google,charger u:object_r:sysfs_batteryinfo:s0
@@ -94,6 +102,7 @@ genfscon sysfs /devices/platform/100a0000.ISP u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.G3D u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/100b0000.TPU u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/19000000.aoc u:object_r:sysfs_aoc:s0
+genfscon sysfs /devices/platform/cpif/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_stats u:object_r:sysfs_acpm_stats:s0
 genfscon sysfs /devices/platform/google,cpm u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/soc0/revision u:object_r:sysfs_soc:s0
