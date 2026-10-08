@@ -491,7 +491,12 @@ PRODUCT_VENDOR_PROPERTIES += ro.crypto.metadata_init_delete_all_keys.enabled?=tr
 # Hardware Info
 include hardware/google/pixel/HardwareInfo/HardwareInfo.mk
 
+# Allow longer timeout for incident report generation in bugreport
+# Overriding in /product partition instead of /vendor intentionally,
+# since it can't be overridden from /vendor.
 PRODUCT_PRODUCT_PROPERTIES += \
+	dumpstate.strict_run=false
+
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
 PRODUCT_COPY_FILES += \
