@@ -605,6 +605,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
+# AiAi Config
+PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
