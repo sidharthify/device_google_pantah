@@ -30,6 +30,7 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
 	system \
+	system_dlkm \
 	system_ext \
 	product \
 	vbmeta_system
@@ -52,6 +53,7 @@ AB_OTA_PARTITIONS += pvmfw
 endif
 
 # Enable chain partition for system.
+BOARD_AVB_VBMETA_SYSTEM := system system_dlkm system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
@@ -89,6 +91,7 @@ BOARD_SUPER_PARTITION_GROUPS := google_dynamic_partitions
 BOARD_GOOGLE_DYNAMIC_PARTITIONS_SIZE := 8527020032
 BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
+    system_dlkm \
     system_ext \
     product \
     vendor \
@@ -96,6 +99,10 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 
 # Set error limit to BOARD_SUPER_PARTITON_SIZE - 500MB
 BOARD_SUPER_PARTITION_ERROR_LIMIT := 8006926336
+
+# Build a separate system_dlkm partition
+BOARD_USES_SYSTEM_DLKMIMAGE := true
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 
 # Device Tree
 BOARD_USES_DT := true
