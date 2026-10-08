@@ -2,7 +2,11 @@
         <name>android.hardware.boot</name>
         <fqname>IBootControl/default</fqname>
     </hal>
+    <hal format="aidl">
         <name>android.hardware.media.c2</name>
+        <fqname>IComponentStore/default1</fqname>
+    </hal>
+    <hal format="aidl">
         <name>android.hardware.media.c2</name>
     <hal format="hidl">
         <name>android.hardware.secure_element</name>
