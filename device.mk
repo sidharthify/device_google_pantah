@@ -540,6 +540,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringOverlay
+
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
 PRODUCT_COPY_FILES += \
