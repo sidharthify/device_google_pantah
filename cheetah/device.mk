@@ -1,4 +1,6 @@
 PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
+    WifiOverlay2022_C10
+
 # SKU specific RROs
 PRODUCT_PACKAGES += \
