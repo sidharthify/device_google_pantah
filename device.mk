@@ -594,6 +594,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
 # PowerShare
+include hardware/google/pixel/powershare/device.mk
+
 PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_COPY_FILES += \
