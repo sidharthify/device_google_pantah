@@ -314,6 +314,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # System props to enable Bluetooth Quality Report (BQR) feature
 PRODUCT_PRODUCT_PROPERTIES += \
+	persist.bluetooth.bqr.event_mask?=30 \
 	persist.bluetooth.bqr.min_interval_ms=500
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
