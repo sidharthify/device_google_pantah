@@ -1,1 +1,2 @@
 persist.bluetooth.leaudio.notify.idle.during.call=true
+persist.settings.large_screen_opt.enabled=false
