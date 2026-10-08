@@ -21,3 +21,4 @@
     <item>GVU6C</item>
     <item>G03Z5</item>
   </string-array>
+  <bool name="tag_intent_app_pref_supported">true</bool>

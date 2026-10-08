@@ -21,3 +21,4 @@
     <item>GE2AE</item>
     <item>GFE4J</item>
   </string-array>
+  <bool name="tag_intent_app_pref_supported">true</bool>
