@@ -1,6 +1,7 @@
 persist.vendor.config. u:object_r:vendor_persist_config_default_prop:s0
 persist.vendor.modem. u:object_r:vendor_modem_prop:s0
 persist.vendor.pixellogger. u:object_r:vendor_logger_prop:s0
+persist.vendor.radio. u:object_r:vendor_rild_prop:s0
 persist.vendor.ril. u:object_r:vendor_rild_prop:s0
 persist.vendor.se. u:object_r:vendor_secure_element_prop:s0
 persist.vendor.sys. u:object_r:vendor_persist_sys_default_prop:s0
