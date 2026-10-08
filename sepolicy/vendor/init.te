@@ -6,3 +6,4 @@ allow init custom_ab_block_device:lnk_file relabelto;
 allow init ram_device:blk_file w_file_perms;
 allow init sysfs_scsi_devices_0000:file w_file_perms;
 allow vendor_init bootdevice_sysdev:file create_file_perms;
+allow vendor_init sysfs_st33spi:file w_file_perms;
