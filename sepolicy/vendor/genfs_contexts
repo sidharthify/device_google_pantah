@@ -75,6 +75,8 @@ genfscon sysfs /devices/platform/14700000.ufs/io_stats u:object_r:sysfs_scsi_dev
 genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firmware:s0
 genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/sjtag_gsa/interface u:object_r:sysfs_sjtag:s0
+genfscon sysfs /devices/platform/sjtag_ap/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
 genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
 genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
