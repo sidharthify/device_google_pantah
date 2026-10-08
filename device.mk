@@ -202,6 +202,8 @@ PRODUCT_PACKAGES += wpa_supplicant.conf
 
 WIFI_PRIV_CMD_UPDATE_MBO_CELL_STATUS := enabled
 
+$(call soong_config_set,bigo,soc,gs201)
+
 # 1. Codec 2.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
