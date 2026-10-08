@@ -67,6 +67,7 @@
         </interface>
     </hal>
         <name>com.google.hardware.pixel.display</name>
+        <version>16-17</version>
         <interface>
             <instance>default</instance>
         </interface>
