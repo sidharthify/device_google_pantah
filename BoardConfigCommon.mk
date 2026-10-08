@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Security - must be defined before the rest of the board configuration
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+
 include build/make/target/board/BoardConfigMainlineCommon.mk
 include build/make/target/board/BoardConfigPixelCommon.mk
 
