@@ -1,3 +1,5 @@
 type rlsservice, domain;
+add_service(rlsservice, rls_service)
+
 init_daemon_domain(rlsservice)
 
