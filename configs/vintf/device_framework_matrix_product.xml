@@ -71,6 +71,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+        <interface>
             <instance>default</instance>
         </interface>
     </hal>
