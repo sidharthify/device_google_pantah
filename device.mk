@@ -556,6 +556,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.preventative_fsck = 1
 
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-yaap
+
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
     ANGLE
