@@ -6,6 +6,7 @@ allow hal_camera_default edgetpu_device:chr_file rw_file_perms;
 allow hal_camera_default edgetpu_vendor_service:service_manager find;
 allow hal_camera_default fwk_stats_service:service_manager find;
 allow hal_camera_default hal_radioext_hwservice:hwservice_manager find;
+allow hal_camera_default kernel:process setsched;
 allow hal_camera_default lwis_device:chr_file rw_file_perms;
 allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default persist_camera_file:dir rw_dir_perms;
