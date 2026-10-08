@@ -19,6 +19,9 @@ TARGET_BOOTLOADER_BOARD_NAME := $(DEVICE_CODENAME)
 TARGET_SCREEN_DENSITY := 560
 
 # SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/$(DEVICE_CODENAME)/vendor
+
 DEVICE_PATH := device/google/pantah
 VENDOR_PATH := vendor/google/cheetah
 

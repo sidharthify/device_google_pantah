@@ -17,3 +17,4 @@ allow hal_health_default sysfs_thermal:file w_file_perms;
 allow hal_health_default sysfs_wlc:dir search;
 allow hal_health_default sysfs_wlc:file r_file_perms;
 allow hal_health_default thermal_link_device:dir search;
+binder_call(hal_health_default, hal_wlcservice)

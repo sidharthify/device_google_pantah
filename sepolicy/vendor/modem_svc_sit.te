@@ -33,3 +33,4 @@ allow modem_svc_sit radio_vendor_data_file:sock_file { create unlink write };
 allow modem_svc_sit sysfs_modem:file rw_file_perms;
 allow modem_svc_sit vendor_fw_file:dir search;
 allow modem_svc_sit vendor_fw_file:file r_file_perms;
+hal_server_domain(modem_svc_sit, hal_shared_modem_platform)

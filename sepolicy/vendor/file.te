@@ -109,3 +109,7 @@ type vendor_usb_debugfs, debugfs_type, fs_type;
 type vendor_usf_reg_edit, file_type, vendor_file_type;
 type vendor_usf_stats, file_type, vendor_file_type;
 type vendor_votable_debugfs, debugfs_type, fs_type;
+type sysfs_gps_assert, fs_type, sysfs_type;
+type vendor_bt_data_file, data_file_type, file_type;
+type vendor_gps_file, data_file_type, file_type;
+type vendor_wlc_file, data_file_type, file_type;
