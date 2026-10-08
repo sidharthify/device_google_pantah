@@ -22,6 +22,9 @@
     <signer signature="@GOOGLE" >
         <seinfo value="google" />
     </signer>
+    <signer signature="@CAMERASERVICES" >
+        <seinfo value="CameraServices" />
+    </signer>
     <signer signature="@MDS" >
         <seinfo value="mds" />
     </signer>
