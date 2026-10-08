@@ -14,6 +14,8 @@ VENDOR_PATH := vendor/google/cheetah
 # All components inherited here go to system image
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
 # Enable CSI checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
@@ -35,6 +37,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
 # TODO(b/136525499): move *_vendor.mk into the vendor makefile later
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+
+# Inherit default art config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/default_art_config.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
