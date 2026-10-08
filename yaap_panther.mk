@@ -6,6 +6,9 @@ TARGET_DISABLE_EPPE := true
 # Inherit device configuration
 DEVICE_CODENAME := panther
 DEVICE_PATH := device/google/pantah
+VENDOR_PATH := vendor/google/panther
+
+#
 # All components inherited here go to system image
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
@@ -41,3 +44,4 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(DEVICE_CODENAME)
 
+$(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)

@@ -17,3 +17,5 @@
 TARGET_SCREEN_DENSITY := 420
 
 DEVICE_PATH := device/google/pantah
+VENDOR_PATH := vendor/google/panther
+
