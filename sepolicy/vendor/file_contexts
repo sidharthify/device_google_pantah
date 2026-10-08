@@ -109,6 +109,7 @@
 /mnt/vendor/persist/ss(/.*)? u:object_r:persist_ss_file:s0
 /mnt/vendor/persist/uwb(/.*)? u:object_r:persist_uwb_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.goodix u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.fpc u:object_r:fingerprint_factory_service_exec:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.goodix u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/android\.hardware\.drm-service\.clearkey u:object_r:hal_drm_clearkey_exec:s0
