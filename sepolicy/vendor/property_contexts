@@ -1,5 +1,6 @@
 persist.vendor.camera. u:object_r:vendor_camera_prop:s0
 persist.vendor.config. u:object_r:vendor_persist_config_default_prop:s0
+persist.vendor.ims. u:object_r:vendor_imssvc_prop:s0
 persist.vendor.modem. u:object_r:vendor_modem_prop:s0
 persist.vendor.pixellogger. u:object_r:vendor_logger_prop:s0
 persist.vendor.radio. u:object_r:vendor_rild_prop:s0

@@ -4,6 +4,8 @@ app_domain(vendor_ims_app)
 
 binder_call(vendor_ims_app, rild)
 
+get_prop(vendor_ims_app, vendor_imssvc_prop)
+
 set_prop(vendor_ims_app, radio_prop)
 set_prop(vendor_ims_app, vendor_rild_prop)
 
