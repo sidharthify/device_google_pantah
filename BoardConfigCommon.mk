@@ -284,7 +284,9 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor
 
 # Verified Boot
+ifneq (user,$(TARGET_BUILD_VARIANT))
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 endif
 
