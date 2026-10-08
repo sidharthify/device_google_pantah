@@ -37,6 +37,7 @@
         </interface>
     </hal>
         <name>com.google.edgetpu</name>
+        <version>2</version>
         <interface>
             <name>IEdgeTpuVendorService</name>
             <instance>default</instance>
@@ -53,6 +54,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+        <version>2</version>
         <interface>
             <instance>default</instance>
         </interface>
