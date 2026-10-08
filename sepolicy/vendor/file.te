@@ -74,6 +74,7 @@ type sysfs_st33spi, fs_type, mlstrustedobject, sysfs_type;
 type sysfs_trusty, fs_type, sysfs_type;
 type sysfs_usbc_throttling_stats, fs_type, sysfs_type;
 type sysfs_vendor_metrics, fs_type, sysfs_type;
+type sysfs_vendor_mm, fs_type, sysfs_type;
 type sysfs_wifi, fs_type, sysfs_type;
 type sysfs_wlc, fs_type, sysfs_type;
 type sysfs_write_leds, fs_type, sysfs_type;
