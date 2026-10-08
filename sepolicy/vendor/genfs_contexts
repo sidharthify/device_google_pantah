@@ -107,6 +107,7 @@ genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0025/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0069/power_supply/dc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_pwr_vreg u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/udc/11210000.dwc3/state u:object_r:sysfs_udc:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/time_in_state u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_extinfo u:object_r:sysfs_display:s0
@@ -147,6 +148,7 @@ genfscon sysfs /devices/platform/10970000.hsi2c/i2c-8/8-0008/power_stats u:objec
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0057/chg_stats u:object_r:sysfs_pca:s0
 genfscon sysfs /devices/platform/google,cpm/power_supply/gcpm_pps/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/ring_buffer_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/power/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/trip_time u:object_r:sysfs_usbc_throttling_stats:s0
 genfscon sysfs /devices/platform/19000000.aoc/notify_timeout_aoc_status u:object_r:sysfs_aoc_notifytimeout:s0
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0: u:object_r:sysfs_scsi_devices_0000:s0
@@ -172,6 +174,7 @@ genfscon sysfs /devices/platform/19000000.aoc/com.google.usf/wakeup u:object_r:s
 genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/pwmleds/leds/green/max_brightness u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/19000000.aoc/usb_control/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup u:object_r:sysfs_aoc_dumpstate:s0
@@ -204,6 +207,9 @@ genfscon sysfs /devices/platform/28000000.mali/dvfs_period u:object_r:sysfs_gpu:
 genfscon sysfs /devices/platform/11920000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock u:object_r:sysfs_display:s0
+genfscon sysfs /class/power_supply/wireless/device/version u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /class/power_supply/wireless/device/status u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /class/power_supply/wireless/device/fw_rev u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/14520000.pcie/link_stats u:object_r:sysfs_exynos_pcie_stats:s0
 genfscon sysfs /devices/platform/11920000.pcie/link_stats u:object_r:sysfs_exynos_pcie_stats:s0
 genfscon sysfs /module/trusty_core/parameters/use_high_wq u:object_r:sysfs_trusty:s0

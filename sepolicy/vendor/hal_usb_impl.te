@@ -14,6 +14,7 @@ allow hal_usb_impl fwk_stats_service:service_manager find;
 allow hal_usb_impl self:capability2 wake_alarm;
 allow hal_usb_impl sysfs_batteryinfo:dir r_dir_perms;
 allow hal_usb_impl sysfs_batteryinfo:file rw_file_perms;
+allow hal_usb_impl sysfs_udc:file r_file_perms;
 allow hal_usb_impl sysfs_usbc_throttling_stats:file r_file_perms;
 allow hal_usb_impl sysfs_wakeup:dir search;
 allow hal_usb_impl sysfs_wakeup:file r_file_perms;
