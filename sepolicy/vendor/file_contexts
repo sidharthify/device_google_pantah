@@ -49,6 +49,7 @@
 /dev/dri/card0 u:object_r:graphics_device:s0
 /dev/fimg2d u:object_r:graphics_device:s0
 /dev/logbuffer_bd u:object_r:logbuffer_device:s0
+/dev/logbuffer_cpif u:object_r:logbuffer_device:s0
 /dev/logbuffer_cpm u:object_r:logbuffer_device:s0
 /dev/logbuffer_maxfg u:object_r:logbuffer_device:s0
 /dev/logbuffer_maxfg_base u:object_r:logbuffer_device:s0
