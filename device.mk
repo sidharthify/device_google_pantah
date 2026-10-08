@@ -395,6 +395,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 ## Audio properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=7 \
+	ro.config.media_vol_steps=20 \
 	ro.audio.monitorRotation = true \
 	ro.audio.offload_wakelock=false
 else
