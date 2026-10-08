@@ -358,6 +358,11 @@ include hardware/google/pixel/common/pixel-common-device.mk
 # Wifi ext
 include hardware/google/pixel/wifi_ext/device.mk
 
+# Keymint configuration
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
+    frameworks/native/data/etc/android.hardware.device_unique_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.device_unique_attestation.xml
+
 PRODUCT_PRODUCT_PROPERTIES += \
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
