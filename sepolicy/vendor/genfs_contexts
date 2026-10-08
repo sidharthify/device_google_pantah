@@ -54,6 +54,7 @@ genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/backlight u
 genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
 genfscon sysfs /devices/pseudo_0/adapter0/host1/target1:0:0/1:0:0:0/block/sde u:object_r:sysfs_devices_block:s0
 genfscon sysfs /devices/platform/google,usbc_port_cooling_dev/hysteresis_time u:object_r:sysfs_usbc_throttling_stats:s0
+genfscon sysfs /devices/platform/10940000.spi/spi_master/spi5/spi5.0/nstandby u:object_r:sysfs_gps:s0
 genfscon sysfs /devices/platform/google,battery/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma u:object_r:sysfs_display:s0
