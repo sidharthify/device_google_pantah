@@ -1,1 +1,3 @@
+system_public_prop(telephony_ril_prop)
+
 system_vendor_config_prop(fingerprint_ghbm_prop)
