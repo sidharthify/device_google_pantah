@@ -7,6 +7,7 @@ genfscon debugfs /maxfg u:object_r:vendor_maxfg_debugfs:s0
 genfscon debugfs /usb u:object_r:vendor_usb_debugfs:s0
 genfscon proc /sys/vm/swappiness u:object_r:proc_dirty:s0
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/interactive/target_load u:object_r:sysfs_fabric:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight/panel0-backlight/als_table u:object_r:sysfs_write_leds:s0
 genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/17000030.devfreq_intcam/devfreq/17000030.devfreq_intcam/min_freq u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_need_handle_idle_exit u:object_r:sysfs_display:s0
