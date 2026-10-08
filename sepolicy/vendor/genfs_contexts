@@ -40,6 +40,7 @@ genfscon sysfs /devices/platform/google,cpm/power_supply/gcpm/wakeup u:object_r:
 genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/28000000.mali/uid_time_in_state u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
@@ -49,6 +50,7 @@ genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt u:object_r:sysfs_
 genfscon sysfs /devices/platform/14700000.ufs/slowio_unmap_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_read_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_sync_cnt u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/28000000.mali/time_in_state u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/28000000.mali/hint_min_freq u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/14700000.ufs/clkgate_enable u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/coredump_count u:object_r:sysfs_aoc_dumpstate:s0
