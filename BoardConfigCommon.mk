@@ -233,6 +233,8 @@ BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 
 # Manifests
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/yaap/config/device_framework_matrix.xml
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor \
