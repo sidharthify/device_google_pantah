@@ -44,6 +44,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit default art config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/default_art_config.mk)
 
+$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7

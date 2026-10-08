@@ -4,6 +4,9 @@
 # Copyright (C) Yet Another AOSP Project
 #
 
+# Inherit common device configuration
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
+
 # HBM
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayPanther
@@ -11,6 +14,14 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.recovery.panther.touch.rc
+
+# Recovery files
+PRODUCT_COPY_FILES += \
+        $(DEVICE_PATH)/init/init.recovery.pantah.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.panther.rc
+
+# NFC
+PRODUCT_PACKAGES += \
+	NfcOverlayPanther
 
 # WiFi Overlay
 PRODUCT_PACKAGES += \

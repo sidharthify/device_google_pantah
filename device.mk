@@ -6,6 +6,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel tree
 TARGET_LINUX_KERNEL_VERSION := 6.1
 TARGET_KERNEL_DIR := device/google/pantah-kernels/6.1/
 TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/kernel-headers
@@ -701,6 +702,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
 
 PRODUCT_PACKAGES += \
+	android.hardware.nfc-service.st
+
 # SecureElement
 PRODUCT_PACKAGES += \
 	android.hardware.secure_element@1.2-service-gto \
