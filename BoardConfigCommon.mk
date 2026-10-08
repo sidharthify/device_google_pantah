@@ -1,2 +1,110 @@
 #
 # SPDX-FileCopyrightText: The Android Open Source Project
+include build/make/target/board/BoardConfigMainlineCommon.mk
+include build/make/target/board/BoardConfigPixelCommon.mk
+
+TARGET_ARCH := arm64
+TARGET_CPU_ABI := arm64-v8a
+BOARD_KERNEL_CMDLINE += dyndbg=\"func alloc_contig_dump_pages +p\"
+BOARD_KERNEL_CMDLINE += earlycon=exynos4210,0x10A00000 console=ttySAC0,115200 androidboot.console=ttySAC0 printk.devkmsg=on
+BOARD_KERNEL_CMDLINE += cma_sysfs.experimental=Y
+TARGET_NO_BOOTLOADER := true
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
+TARGET_RECOVERY_UI_LIB := \
+	libfstab
+
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+	system \
+	system_ext \
+	product \
+	vbmeta_system
+
+ifneq ($(PRODUCT_BUILD_BOOT_IMAGE),false)
+AB_OTA_PARTITIONS += boot
+endif
+ifneq ($(PRODUCT_BUILD_VENDOR_BOOT_IMAGE),false)
+AB_OTA_PARTITIONS += vendor_boot
+AB_OTA_PARTITIONS += dtbo
+endif
+ifneq ($(PRODUCT_BUILD_VBMETA_IMAGE),false)
+AB_OTA_PARTITIONS += vbmeta
+endif
+# Enable chain partition for system.
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+
+# Enable chained vbmeta for boot images
+BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 2
+
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 11796480000
+PRODUCT_FS_COMPRESSION := 1
+BOARD_FLASH_BLOCK_SIZE := 4096
+
+# product.img
+TARGET_COPY_OUT_PRODUCT := product
+
+# system_ext.img
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+
+BOARD_SUPER_PARTITION_SIZE := 8531214336
+BOARD_SUPER_PARTITION_GROUPS := google_dynamic_partitions
+# Set size to BOARD_SUPER_PARTITION_SIZE - overhead (4MiB) (b/182237294)
+BOARD_GOOGLE_DYNAMIC_PARTITIONS_SIZE := 8527020032
+BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+    system \
+    system_ext \
+    product \
+    vendor \
+    vendor_dlkm
+
+# Set error limit to BOARD_SUPER_PARTITON_SIZE - 500MB
+BOARD_SUPER_PARTITION_ERROR_LIMIT := 8006926336
+
+# Device Tree
+BOARD_USES_DT := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+BOARD_PREBUILT_DTBOIMAGE := $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtbo.img
+
+BOARD_USES_METADATA_PARTITION := true
+
+# exynos RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
+# Bluetooth defines
+# TODO(b/123695868): Remove the need for this
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := \
+	build/make/target/board/mainline_arm64/bluetooth
+
+# Boot.img
+BOARD_RAMDISK_USE_LZ4     := true
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+# Enable AVB2.0
+BOARD_AVB_ENABLE := true
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 0x04000000
+BOARD_DTBOIMG_PARTITION_SIZE := 0x01000000
+
+# Vendor ramdisk image for kernel development
+BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
+
+# Battery options
+BOARD_KERNEL_CMDLINE += at24.write_timeout=100
+
+# Enable larger logbuf
+BOARD_KERNEL_CMDLINE += log_buf_len=1024K
+
