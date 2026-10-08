@@ -17,6 +17,7 @@ genfscon debugfs /f2fs u:object_r:debugfs_f2fs:s0
 genfscon debugfs /cma u:object_r:vendor_cma_debugfs:s0
 genfscon debugfs /bts u:object_r:vendor_bts_debugfs:s0
 genfscon debugfs /usb u:object_r:vendor_usb_debugfs:s0
+genfscon debugfs /physical-memory-group-manager u:object_r:debugfs_mgm:s0
 genfscon proc /sys/kernel/sched_pelt_multiplier u:object_r:proc_sched:s0
 genfscon proc /sys/vm/compaction_proactiveness u:object_r:proc_compaction_proactiveness:s0
 genfscon proc /sys/vm/swappiness u:object_r:proc_dirty:s0
