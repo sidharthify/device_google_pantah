@@ -53,6 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.active_modems.max_count=2
 
 # HWUI
+TARGET_USES_VULKAN = true
+
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.hardware.vulkan=mali
 
