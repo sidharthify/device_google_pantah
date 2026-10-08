@@ -27,7 +27,7 @@ persist.vendor.camera.front_720P_always_binning=true
 
 # Codec2
 debug.c2.use_dmabufheaps=1
-debug.stagefright.c2-poolmask=458752
+debug.stagefright.c2-poolmask=1507328
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec_delayed_params=1
 media.c2.dmabuf.padding=512
@@ -167,7 +167,7 @@ suspend.short_suspend_backoff_enabled=true
 suspend.short_suspend_threshold_millis=2000
 
 # svn
-ro.vendor.build.svn=93
+ro.vendor.build.svn=96
 
 # Telephony
 persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
