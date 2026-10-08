@@ -1,2 +1,4 @@
+allow chre hal_wifi_ext:binder { call transfer };
+allow chre hal_wifi_ext_hwservice:hwservice_manager find;
 allow chre sysfs_aoc:dir search;
 allow chre sysfs_aoc_boottime:file r_file_perms;
