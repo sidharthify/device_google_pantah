@@ -1,4 +1,6 @@
 type hal_drm_widevine, domain;
+hal_server_domain(hal_drm_widevine, hal_drm)
+
 init_daemon_domain(hal_drm_widevine)
 
 allow hal_drm_widevine dmabuf_system_heap_device:chr_file r_file_perms;
