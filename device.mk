@@ -114,6 +114,10 @@ PRODUCT_COPY_FILES += \
 
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
 
+# IRQ rebalancing.
+include hardware/google/pixel/rebalance_interrupts/rebalance_interrupts.mk
+
+#
 # Audio HALs
 #
 
