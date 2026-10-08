@@ -1,3 +1,12 @@
         <name>android.hardware.boot</name>
         <name>android.hardware.media.c2</name>
         <name>android.hardware.media.c2</name>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
+        <fqname>@1.2::ISecureElement/eSE2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
