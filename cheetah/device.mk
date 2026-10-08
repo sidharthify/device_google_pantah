@@ -8,6 +8,8 @@
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/cheetah/overlay
 
 # Inherit common configuration
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
+
 # Init
 PRODUCT_PACKAGES += \
     init.recovery.cheetah.touch.rc

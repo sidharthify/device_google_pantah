@@ -4,6 +4,9 @@
 # Copyright (C) Yet Another AOSP Project
 #
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/panther/overlay
+
 # Inherit common device configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
