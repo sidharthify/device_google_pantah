@@ -79,6 +79,7 @@
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service u:object_r:hal_secure_element_uicc_exec:s0
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service u:object_r:hal_radioext_default_exec:s0
+/vendor/bin/hw/vendor\.google\.wireless_charger@1\.3-service-vendor u:object_r:hal_wlc_exec:s0
 /vendor/bin/init\.radio\.sh u:object_r:init_radio_exec:s0
 /vendor/bin/tcpdump_logger u:object_r:tcpdump_logger_exec:s0
 /vendor/bin/trusty_apploader u:object_r:trusty_apploader_exec:s0
