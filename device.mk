@@ -286,6 +286,11 @@ PRODUCT_BUILD_VENDOR_KERNEL_BOOT_IMAGE := true
 # Project
 include hardware/google/pixel/common/pixel-common-device.mk
 
+# wifi_diagnostic only works with PixelLogger, which we don't ship, and its
+# sepolicy needs PixelLogger's logger_app domain
+PRODUCT_PACKAGES_DEBUG := $(filter-out wifi_diagnostic,$(PRODUCT_PACKAGES_DEBUG))
+BOARD_VENDOR_SEPOLICY_DIRS := $(filter-out hardware/google/pixel-sepolicy/wifi_diagnostic,$(BOARD_VENDOR_SEPOLICY_DIRS))
+
 # Wifi ext
 include hardware/google/pixel/wifi_ext/device.mk
 
