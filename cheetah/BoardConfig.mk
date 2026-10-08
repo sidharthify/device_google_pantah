@@ -16,3 +16,4 @@
 
 TARGET_SCREEN_DENSITY := 560
 
+DEVICE_PATH := device/google/pantah

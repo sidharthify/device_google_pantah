@@ -1,3 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Inherit some common stuff
+TARGET_DISABLE_EPPE := true
+# Inherit device configuration
+DEVICE_CODENAME := panther
+DEVICE_PATH := device/google/pantah
 # All components inherited here go to system image
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
@@ -22,4 +30,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
 # TODO(b/136525499): move *_vendor.mk into the vendor makefile later
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Pixel 7
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DeviceProduct=$(DEVICE_CODENAME)
 
