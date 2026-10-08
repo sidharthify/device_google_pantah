@@ -345,6 +345,9 @@ PRODUCT_VENDOR_PROPERTIES += ro.soc.model=GS201
 
 PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
+# ZramWriteback
+-include hardware/google/pixel/mm/device_gki.mk
+
 PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
 # NFC
