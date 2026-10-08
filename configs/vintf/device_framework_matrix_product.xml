@@ -6,6 +6,7 @@
             <instance>slot2</instance>
         </interface>
     </hal>
+        <name>com.fingerprints42.extension</name>
         <version>1.0</version>
         <interface>
             <name>IFingerprintAuthenticator</name>
