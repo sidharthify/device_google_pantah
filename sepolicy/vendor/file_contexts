@@ -58,6 +58,8 @@
 /dev/logbuffer_maxq u:object_r:logbuffer_device:s0
 /dev/logbuffer_pca9468 u:object_r:logbuffer_device:s0
 /dev/logbuffer_pca9468_tcpm u:object_r:logbuffer_device:s0
+/dev/logbuffer_pcie0 u:object_r:logbuffer_device:s0
+/dev/logbuffer_pcie1 u:object_r:logbuffer_device:s0
 /dev/logbuffer_pogo_transport u:object_r:logbuffer_device:s0
 /dev/logbuffer_rtx u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc u:object_r:logbuffer_device:s0
