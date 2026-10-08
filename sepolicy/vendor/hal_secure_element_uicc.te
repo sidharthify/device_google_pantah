@@ -1,0 +1,5 @@
+type hal_secure_element_uicc, domain;
+hal_server_domain(hal_secure_element_uicc, hal_secure_element)
+
+init_daemon_domain(hal_secure_element_uicc)
+

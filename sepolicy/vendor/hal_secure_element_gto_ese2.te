@@ -1,0 +1,4 @@
+type hal_secure_element_gto_ese2, domain;
+hal_server_domain(hal_secure_element_gto_ese2, hal_secure_element)
+
+init_daemon_domain(hal_secure_element_gto_ese2)
