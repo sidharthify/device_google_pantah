@@ -4,3 +4,4 @@ user=_app isPrivApp=true name=com.shannon.rcsservice:shannonrcsservice domain=ve
 user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
 user=_app isPrivApp=true seinfo=uwb name=com.qorvo.uwb.vendorservice domain=uwb_vendor_app type=uwb_vendor_data_file levelFrom=all
 user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.google.android.satellite domain=pixelntnservice_app type=app_data_file levelFrom=all

@@ -1,4 +1,6 @@
 type cbd, domain;
+get_prop(cbd, telephony_modem_prop)
+
 set_prop(cbd, vendor_cbd_prop)
 set_prop(cbd, vendor_modem_prop)
 set_prop(cbd, vendor_rild_prop)
