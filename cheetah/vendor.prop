@@ -43,6 +43,8 @@ ro.vendor.fingerprint.ta.name=g7.app
 ro.odm.build.media_performance_class=33
 
 # svn
+ro.vendor.build.svn=84
+
 # touch
 ro.vendor.touch.dump.sys=/sys/class/spi_master/spi0/spi0.0/synaptics_tcm.0/sysfs
 
