@@ -1,1 +1,6 @@
+hal_client_domain(hal_graphics_composer_default, hal_power)
+
+add_service(hal_graphics_composer_default, hal_pixel_display_service)
 add_service(hal_graphics_composer_default, vendor_displaycolor_service)
+add_service(hal_graphics_composer_default, vendor_surfaceflinger_vndservice)
+
