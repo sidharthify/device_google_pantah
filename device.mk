@@ -330,6 +330,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.hwc.dpp.downscale=2
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.ddk.set.afbc=1
 
+ifeq ($(USE_TABLET_BT_COD),true)
+PRODUCT_CHARACTERISTICS := nosdcard,tablet
+else
 PRODUCT_CHARACTERISTICS := nosdcard
 endif
 
