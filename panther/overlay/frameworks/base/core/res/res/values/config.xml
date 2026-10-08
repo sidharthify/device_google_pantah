@@ -169,6 +169,7 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- The default refresh rate. We manage this using the peak refresh rate setting. Set this
@@ -208,12 +209,48 @@
     <item>80</item>
     <item>90</item>
     <item>100</item>
+    <item>200</item>
+    <item>300</item>
+    <item>400</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+    <item>3000</item>
+    <item>4000</item>
+</integer-array>
+
 <integer-array name="config_ambientBrighteningThresholds">
+    <item>5186</item>
     <item>4333</item>
     <item>3666</item>
+    <item>2999</item>
+    <item>2759</item>
+    <item>2519</item>
+    <item>2279</item>
+    <item>2039</item>
+    <item>1799</item>
+    <item>799</item>
     <item>527</item>
+    <item>499</item>
     <item>470</item>
+    <item>517</item>
+    <item>565</item>
+    <item>612</item>
+    <item>660</item>
+    <item>708</item>
+    <item>742</item>
+    <item>636</item>
+    <item>582</item>
+    <item>549</item>
+    <item>369</item>
+    <item>294</item>
+    <item>269</item>
+    <item>220</item>
+    <item>220</item>
+</integer-array>
+
 <integer-array name="config_ambientDarkeningThresholds">
+    <item>525</item>
     <item>683</item>
     <item>666</item>
     <item>650</item>
@@ -226,6 +263,23 @@
     <item>500</item>
     <item>440</item>
     <item>385</item>
+    <item>382</item>
+    <item>379</item>
+    <item>376</item>
+    <item>373</item>
+    <item>371</item>
+    <item>367</item>
+    <item>387</item>
+    <item>397</item>
+    <item>403</item>
+    <item>380</item>
+    <item>345</item>
+    <item>333</item>
+    <item>283</item>
+    <item>283</item>
+</integer-array>
+
+
     <!-- UDFPS does not support gestures -->
     <bool name="config_fingerprintSupportsGestures">false</bool>
 
