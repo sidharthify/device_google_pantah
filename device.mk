@@ -308,6 +308,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Project
 include hardware/google/pixel/common/pixel-common-device.mk
 
+# Wifi ext
+include hardware/google/pixel/wifi_ext/device.mk
+
 PRODUCT_PRODUCT_PROPERTIES += \
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
