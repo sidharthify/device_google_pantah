@@ -8,6 +8,8 @@ add_service(hal_graphics_composer_default, vendor_surfaceflinger_vndservice)
 get_prop(hal_graphics_composer_default, device_config_surface_flinger_native_boot_prop)
 get_prop(hal_graphics_composer_default, vendor_persist_sys_default_prop)
 
+set_prop(hal_graphics_composer_default, vendor_display_prop)
+
 vndbinder_use(hal_graphics_composer_default)
 
 allow hal_graphics_composer_default hal_dumpstate_default:fd use;
