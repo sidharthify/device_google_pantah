@@ -8,6 +8,8 @@ TARGET_CPU_ABI := arm64-v8a
 BOARD_KERNEL_CMDLINE += dyndbg=\"func alloc_contig_dump_pages +p\"
 BOARD_KERNEL_CMDLINE += earlycon=exynos4210,0x10A00000 console=ttySAC0,115200 androidboot.console=ttySAC0 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += cma_sysfs.experimental=Y
+BOARD_BOOTCONFIG += androidboot.boot_devices=14700000.ufs
+
 TARGET_NO_BOOTLOADER := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
@@ -93,6 +95,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := \
 
 # Boot.img
 BOARD_RAMDISK_USE_LZ4     := true
+BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Enable AVB2.0
