@@ -93,6 +93,7 @@ genfscon sysfs /devices/platform/1c240000.drmdecon/dqe0/atc u:object_r:sysfs_dis
 genfscon sysfs /devices/platform/1c241000.drmdecon/dqe1/atc u:object_r:sysfs_display:s0
 genfscon sysfs /module/trusty_virtio/parameters/use_high_wq u:object_r:sysfs_trusty:s0
 genfscon sysfs /devices/platform/19000000.aoc/restart_count u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/28000000.mali/dvfs_period u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/11920000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock u:object_r:sysfs_display:s0
