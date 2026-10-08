@@ -470,7 +470,6 @@ lib/soundfx/libreverbwrapper.so
 lib/soundfx/libvisualizer.so
 lib64/android.frameworks.stats-V1-ndk.so
 lib64/android.frameworks.stats-V2-ndk.so
-lib64/android.frameworks.stats-V3-ndk.so
 lib64/android.hardware.audio.common-V5-ndk.so
 lib64/android.hardware.audio.common-util.so
 lib64/android.hardware.audio.common@2.0.so

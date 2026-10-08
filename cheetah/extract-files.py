@@ -40,6 +40,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'android.frameworks.stats-V3-ndk',
         'com.google.edgetpu_app_service-V3-ndk',
         'com.google.edgetpu_vendor_service-V2-ndk',
     ): lib_fixup_vendor_suffix,
@@ -92,6 +93,7 @@ def fix_vendor_file_list(file_list: FileList):
     )
 
     module_suffix_file_paths = [
+        'vendor/lib64/android.frameworks.stats-V3-ndk.so',
         'vendor/lib/com.google.edgetpu_app_service-V3-ndk.so',
         'vendor/lib64/com.google.edgetpu_app_service-V3-ndk.so',
         'vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so',
