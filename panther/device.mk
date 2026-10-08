@@ -2,6 +2,10 @@
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayPanther
 
+# Init
+PRODUCT_PACKAGES += \
+    init.recovery.panther.touch.rc
+
 # WiFi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlay2022_P10

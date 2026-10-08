@@ -1,3 +1,7 @@
+# Init
+PRODUCT_PACKAGES += \
+    init.recovery.cheetah.touch.rc
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.uwb.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.uwb.xml
 
