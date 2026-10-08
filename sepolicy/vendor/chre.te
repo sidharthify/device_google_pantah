@@ -1,0 +1,2 @@
+allow chre sysfs_aoc:dir search;
+allow chre sysfs_aoc_boottime:file r_file_perms;

@@ -1,0 +1,6 @@
+type bipchmgr, domain;
+binder_call(bipchmgr, rild)
+
+hwbinder_use(bipchmgr)
+
+allow bipchmgr hal_exynos_rild_hwservice:hwservice_manager find;

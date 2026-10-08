@@ -1,0 +1,17 @@
+type modem_svc_sit, domain;
+binder_call(modem_svc_sit, rild)
+
+get_prop(modem_svc_sit, hwservicemanager_prop)
+get_prop(modem_svc_sit, vendor_rild_prop)
+
+hwbinder_use(modem_svc_sit)
+
+init_daemon_domain(modem_svc_sit)
+
+allow modem_svc_sit hal_exynos_rild_hwservice:hwservice_manager find;
+allow modem_svc_sit modem_stat_data_file:file create_file_perms;
+allow modem_svc_sit modem_userdata_file:dir create_dir_perms;
+allow modem_svc_sit modem_userdata_file:file create_file_perms;
+allow modem_svc_sit radio_device:chr_file rw_file_perms;
+allow modem_svc_sit radio_vendor_data_file:dir create_dir_perms;
+allow modem_svc_sit radio_vendor_data_file:file create_file_perms;

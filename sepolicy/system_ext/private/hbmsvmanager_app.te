@@ -1,0 +1,1 @@
+allow hbmsvmanager_app app_api_service:service_manager find;

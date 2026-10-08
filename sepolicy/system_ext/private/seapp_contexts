@@ -1,0 +1,3 @@
+user=_app isPrivApp=true name=com.google.android.grilservice domain=grilservice_app levelFrom=all
+user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.android.hbmsvmanager domain=hbmsvmanager_app type=app_data_file levelFrom=all

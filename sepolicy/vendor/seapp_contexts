@@ -1,0 +1,4 @@
+user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
+user=_app isPrivApp=true seinfo=mds name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
+user=_app isPrivApp=true seinfo=platform name=com.thales.device.ofl.app.basicagent domain=ofl_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=app_data_file levelFrom=user

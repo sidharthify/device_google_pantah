@@ -1,0 +1,4 @@
+type init_radio, domain;
+allow init_radio radio_vendor_data_file:dir create_dir_perms;
+allow init_radio radio_vendor_data_file:file create_file_perms;
+allow init_radio vendor_toolbox_exec:file execute_no_trans;
