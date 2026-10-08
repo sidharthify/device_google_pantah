@@ -573,6 +573,7 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-yaap
 PRODUCT_PACKAGES += \
     ANGLE
 
+# CutoutOverlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay

@@ -24,3 +24,6 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGVU6C_VN \
     SettingsOverlayPanther
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop
