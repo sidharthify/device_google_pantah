@@ -574,6 +574,7 @@ lib64/libbluetooth_audio_session_aidl.so
 lib64/libc++.so
 lib64/libcfg_if.dylib.so
 lib64/libclang_rt.ubsan_standalone-aarch64-android.so
+lib64/libcommand_fds.dylib.so
 lib64/libcrypto.so
 lib64/libcutils.so
 lib64/libdmabufheap.so

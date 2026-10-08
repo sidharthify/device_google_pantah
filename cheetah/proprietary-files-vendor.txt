@@ -2113,7 +2113,6 @@ vendor/lib64/libbo_av1.so
 vendor/lib64/libc2filterplugin.so
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
-vendor/lib64/libcommand_fds.dylib.so
 vendor/lib64/libdarwinn_hal.so
 vendor/lib64/libdeeptouch.so
 vendor/lib64/libdisplaycolor.so
