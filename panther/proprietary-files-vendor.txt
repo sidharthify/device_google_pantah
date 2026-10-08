@@ -1967,14 +1967,12 @@ vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
 vendor/lib64/PixelVibratorFlagsL26.so
 vendor/lib64/aconfig_gpu_flags_c_lib.so
 vendor/lib64/aconfig_gsc_flags_c_lib.so
-vendor/lib64/android.frameworks.stats-V3-ndk.so
 vendor/lib64/android.hardware.authsecret-impl.nos.so
 vendor/lib64/android.hardware.oemlock-impl.nos.so
 vendor/lib64/android.hardware.power.stats-impl.gs-common.so
 vendor/lib64/android.hardware.power.stats-impl.gs201.so
 vendor/lib64/android.hardware.power.stats-impl.pixel.so
 vendor/lib64/android.hardware.security.keymint-impl.nos.so
-vendor/lib64/android.hardware.security.timestamp-V1-ndk.so
 vendor/lib64/android.hardware.weaver-bridge.nos.so
 vendor/lib64/android.hardware.weaver-impl.nos.so
 vendor/lib64/android.hardware.weaver2-impl.nos.so
