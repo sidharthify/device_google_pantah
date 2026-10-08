@@ -279,6 +279,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable silent CP crash handling
 PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.ril.crash_handling_mode=2
+
 # Add support dual SIM mode
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.multisim_switch_support=true
