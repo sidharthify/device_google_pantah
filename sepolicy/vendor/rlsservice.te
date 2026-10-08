@@ -2,6 +2,8 @@ type rlsservice, domain;
 add_service(rlsservice, rls_service)
 
 binder_call(rlsservice, hal_camera_default)
+binder_call(rlsservice, servicemanager)
+
 init_daemon_domain(rlsservice)
 
 vndbinder_use(rlsservice)
