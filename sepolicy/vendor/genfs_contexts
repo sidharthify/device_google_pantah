@@ -17,9 +17,16 @@ genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_m
 genfscon sysfs /devices/platform/17000080.devfreq_bo/devfreq/17000080.devfreq_bo/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/19000000.aoc/aoc_clock_and_kernel_boottime u:object_r:sysfs_aoc_boottime:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/gamma u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/ring_buffer_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/14700000.ufs/host0/target0:0:0/0:0:0: u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/memory_exception u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/host_ipc_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/14700000.ufs/pixel/boot_lun_enabled u:object_r:sysfs_ota:s0
 genfscon sysfs /devices/platform/14700000.ufs/hibern8_on_idle_enable u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/14700000.ufs/device_descriptor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/health_descriptor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt u:object_r:sysfs_scsi_devices_0000:s0
@@ -27,6 +34,8 @@ genfscon sysfs /devices/platform/14700000.ufs/slowio_unmap_cnt u:object_r:sysfs_
 genfscon sysfs /devices/platform/14700000.ufs/slowio_read_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_sync_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/clkgate_enable u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/19000000.aoc/coredump_count u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/19000000.aoc/restart_count u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/11920000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock u:object_r:sysfs_display:s0
@@ -37,6 +46,7 @@ genfscon sysfs /devices/platform/14700000.ufs/err_stats u:object_r:sysfs_scsi_de
 genfscon sysfs /devices/platform/14700000.ufs/ufs_stats u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/io_stats u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firmware:s0
+genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
 genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
