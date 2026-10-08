@@ -1,3 +1,5 @@
+hal_client_domain(grilservice_app, hal_power_stats)
+
 binder_call(grilservice_app, hal_bluetooth_btlinux)
 binder_call(grilservice_app, hal_radioext_default)
 binder_call(grilservice_app, hal_wifi_ext)
