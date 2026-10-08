@@ -77,8 +77,14 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES += \
 	checkpoint_gc
 
+# Vendor verbose logging default property
 PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.verbose_logging_enabled=true
+else
 PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.verbose_logging_enabled=false
+endif
+
 # Touch
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
