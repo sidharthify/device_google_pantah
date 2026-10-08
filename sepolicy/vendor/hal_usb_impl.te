@@ -1,0 +1,3 @@
+type hal_usb_impl, domain;
+init_daemon_domain(hal_usb_impl)
+
