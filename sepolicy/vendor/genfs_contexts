@@ -10,6 +10,7 @@ genfscon debugfs /regmap u:object_r:vendor_regmap_debugfs:s0
 genfscon debugfs /maxfg u:object_r:vendor_maxfg_debugfs:s0
 genfscon debugfs /usb u:object_r:vendor_usb_debugfs:s0
 genfscon proc /sys/vm/swappiness u:object_r:proc_dirty:s0
+genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0025/power_supply/tcpm-source-psy-i2c-max77759tcpc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-20/20-001f/s2mpg12-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18100000/i2c-20/20-001f/s2mpg12-meter/s2mpg12-odpm/iio:device u:object_r:sysfs_odpm:s0
 genfscon sysfs /devices/platform/acpm_mfd_bus@18110000/i2c-21/21-002f/s2mpg13-meter/s2mpg13-odpm/iio:device u:object_r:sysfs_odpm:s0
