@@ -624,6 +624,13 @@ PRODUCT_USE_SCUDO := true
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
+# OpenDelta
+ifeq ($(TARGET_BUILD_GAPPS),true)
+    PRODUCT_PACKAGES += pantahOpenDeltaOverlay
+else
+    PRODUCT_PACKAGES += pantahOpenDeltaOverlayVanilla
+endif
+
 # AiAi Config
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sysconfig/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
