@@ -69,6 +69,12 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/init/init.recovery.gs201.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.gs201.rc
 
 # Fstab files
+PRODUCT_PACKAGES += \
+	fstab.gs201 \
+	fstab.gs201.vendor_ramdisk \
+	fstab.gs201-fips \
+	fstab.gs201-fips.vendor_ramdisk
+
 # For creating dtbo image
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
