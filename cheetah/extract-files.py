@@ -57,6 +57,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/init/init.storage.rc',
     ) : blob_fixup()
         .regex_replace('ro.build.type=userdebug', 'ro.debuggable=1'),
+    (
+        'vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr',
+        'vendor/bin/hw/android.hardware.thermal-service.pixel',
+        'vendor/bin/hw/android.hardware.usb-service',
+        'vendor/lib64/libpixelstats.so',
+    ): blob_fixup()
+        .replace_needed('android.frameworks.stats-V3-ndk.so', 'android.frameworks.stats-V3-ndk_vendor.so'),
+    'vendor/lib64/android.frameworks.stats-V3-ndk_vendor.so': blob_fixup()
+        .fix_soname(),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
@@ -94,8 +103,13 @@ def fix_vendor_file_list(file_list: FileList):
     manifest_file.set_dst('vendor/etc/vintf/manifest/manifest_mapper_framework.xml')
     manifest_file.set_arg(FileArgs.EXTRACT_ONLY, True)
 
+    # Android 17 builds its own unfrozen android.frameworks.stats-V3-ndk
+    # for vendor, ship the stock one next to it under a different name
+    file_list.get_file('vendor/lib64/android.frameworks.stats-V3-ndk.so').set_dst(
+        'vendor/lib64/android.frameworks.stats-V3-ndk_vendor.so'
+    )
+
     module_suffix_file_paths = [
-        'vendor/lib64/android.frameworks.stats-V3-ndk.so',
         'vendor/lib/com.google.edgetpu_app_service-V3-ndk.so',
         'vendor/lib64/com.google.edgetpu_app_service-V3-ndk.so',
         'vendor/lib64/com.google.edgetpu_vendor_service-V2-ndk.so',
