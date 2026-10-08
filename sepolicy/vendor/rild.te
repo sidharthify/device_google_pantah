@@ -10,6 +10,8 @@ binder_call(rild, oemrilservice_app)
 binder_call(rild, vendor_engineermode_app)
 binder_call(rild, vendor_ims_app)
 binder_call(rild, vendor_rcs_app)
+binder_call(rild, vendor_telephony_debug_app)
+
 get_prop(rild, sota_prop)
 get_prop(rild, system_boot_reason_prop)
 get_prop(rild, vendor_carrier_prop)

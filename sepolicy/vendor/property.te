@@ -21,5 +21,6 @@ vendor_internal_prop(vendor_secure_element_prop)
 vendor_internal_prop(vendor_slog_prop)
 vendor_internal_prop(vendor_ssrdump_prop)
 vendor_internal_prop(vendor_tcpdump_log_prop)
+vendor_internal_prop(vendor_telephony_app_prop)
 vendor_internal_prop(vendor_usb_config_prop)
 
