@@ -1,6 +1,7 @@
 hal_client_domain(hal_camera_default, hal_graphics_composer)
 binder_call(hal_camera_default, edgetpu_vendor_server)
 allow hal_camera_default apex_info_file:file r_file_perms;
+allow hal_camera_default dmabuf_system_heap_device:chr_file r_file_perms;
 allow hal_camera_default eco_service:service_manager find;
 allow hal_camera_default edgetpu_device:chr_file rw_file_perms;
 allow hal_camera_default edgetpu_vendor_service:service_manager find;
@@ -20,6 +21,7 @@ allow hal_camera_default sysfs_edgetpu:dir r_dir_perms;
 allow hal_camera_default sysfs_edgetpu:file r_file_perms;
 allow hal_camera_default sysfs_leds:dir r_dir_perms;
 allow hal_camera_default sysfs_leds:file r_file_perms;
+allow hal_camera_default tee_device:chr_file rw_file_perms;
 allow hal_camera_default vendor_camera_data_file:dir rw_dir_perms;
 allow hal_camera_default vendor_camera_data_file:file create_file_perms;
 
