@@ -489,6 +489,7 @@ lib64/android.hardware.cas@1.2.so
 lib64/android.hardware.common-V2-ndk.so
 lib64/android.hardware.common.fmq-V1-ndk.so
 lib64/android.hardware.drm-V1-ndk.so
+lib64/android.hardware.drm-V2-ndk.so
 lib64/android.hardware.drm.common-V1-ndk.so
 lib64/android.hardware.gatekeeper-V1-ndk.so
 lib64/android.hardware.health-V4-ndk.so
@@ -525,6 +526,7 @@ lib64/android.hardware.usb.gadget-V1-ndk.so
 lib64/android.hardware.usb.gadget@1.0.so
 lib64/android.hardware.wifi.common-V2-ndk.so
 lib64/android.hardware.wifi.hostapd-V3-ndk.so
+lib64/android.hardware.wifi.supplicant-V5-ndk.so
 lib64/android.hidl.allocator@1.0.so
 lib64/android.hidl.memory.token@1.0.so
 lib64/android.hidl.memory@1.0.so
@@ -639,6 +641,8 @@ overlay/TeleService__panther__auto_generated_rro_vendor.apk
 overlay/Traceur__panther__auto_generated_rro_vendor.apk
 overlay/WallpaperPickerGoogleRelease__panther__auto_generated_rro_vendor.apk
 overlay/framework-res__panther__auto_generated_rro_vendor.apk
+
+overlay/PixelNfcOverlayCommon.apk
 
 # Symlinks
 lib/modules

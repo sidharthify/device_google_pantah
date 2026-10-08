@@ -55,6 +55,7 @@ product/lib/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmengin
 product/lib/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmjavaplugin.so
 product/lib64/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmengine.so
 product/lib64/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmjavaplugin.so
+product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
@@ -164,6 +165,10 @@ system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 # UWB
 system_ext/etc/permissions/privapp-permissions-qorvo.xml
 system_ext/priv-app/UwbVendorService/UwbVendorService.apk;PRESIGNED
+
+# VINTF
+system_ext/etc/vintf/aocx_framework_compatibility_matrix_system_ext
+system_ext/etc/vintf/imageprocessing_hal_framework_compatibility_matrix_system_ext
 
 # VZW
 system_ext/etc/permissions/vzw_mvs_permissions.xml
