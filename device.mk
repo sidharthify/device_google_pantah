@@ -118,6 +118,8 @@ PRODUCT_COPY_FILES += \
 # Configure EGL blobcache
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.egl.blobcache.multifile=true \
+	ro.egl.blobcache.multifile_limit=33554432 \
+
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.opengles.version=196610 \
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
