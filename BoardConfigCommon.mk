@@ -107,6 +107,17 @@ BOARD_DTBOIMG_PARTITION_SIZE := 0x01000000
 # Vendor ramdisk image for kernel development
 BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 
+KERNEL_MODULE_DIR := $(TARGET_KERNEL_DIR)
+KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_MODULE_DIR)/vendor_dlkm.modules.load))
+ifndef BOARD_VENDOR_KERNEL_MODULES_LOAD
+$(error vendor_dlkm.modules.load not found or empty)
+endif
+
+BOARD_VENDOR_KERNEL_MODULES := $(KERNEL_MODULES)
+endif
+
 # Battery options
 BOARD_KERNEL_CMDLINE += at24.write_timeout=100
 
