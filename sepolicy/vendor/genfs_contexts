@@ -38,6 +38,7 @@ genfscon sysfs /devices/platform/14700000.ufs/ufs_stats u:object_r:sysfs_scsi_de
 genfscon sysfs /devices/platform/14700000.ufs/io_stats u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firmware:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
+genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
 genfscon sysfs /firmware/devicetree/base/chosen u:object_r:sysfs_chosen:s0
 genfscon sysfs /devices/platform/19000000.aoc u:object_r:sysfs_aoc:s0
 genfscon sysfs /devices/platform/acpm_stats u:object_r:sysfs_acpm_stats:s0
