@@ -293,6 +293,7 @@ etc/permissions/android.hardware.camera.full.xml
 etc/permissions/android.hardware.camera.raw.xml
 etc/permissions/android.hardware.context_hub.xml
 etc/permissions/android.hardware.device_unique_attestation.xml
+etc/permissions/android.hardware.hardware_keystore_V4.xml
 etc/permissions/android.hardware.keystore.app_attest_key.xml
 etc/permissions/android.hardware.location.gps.prebuilt.xml
 etc/permissions/android.hardware.nfc.ese.xml
@@ -370,6 +371,7 @@ etc/vintf/manifest/bluetooth_audio.xml
 etc/vintf/manifest/health-storage-default.xml
 etc/vintf/manifest/nfc-service-default.xml
 etc/wifi/wpa_supplicant.conf
+lib/android.hardware.audio.common-V5-ndk.so
 lib/android.hardware.audio.common-util.so
 lib/android.hardware.audio.common@2.0.so
 lib/android.hardware.audio.common@5.0.so
@@ -383,6 +385,7 @@ lib/android.hardware.audio.effect@7.0.so
 lib/android.hardware.audio@7.0.so
 lib/android.hardware.audio@7.1-util.so
 lib/android.hardware.audio@7.1.so
+lib/android.hardware.bluetooth.audio-V6-ndk.so
 lib/android.hardware.bluetooth.audio-impl.so
 lib/android.hardware.bluetooth.audio@2.0.so
 lib/android.hardware.bluetooth.audio@2.1.so
@@ -399,6 +402,7 @@ lib/android.hidl.allocator@1.0.so
 lib/android.hidl.memory.token@1.0.so
 lib/android.hidl.memory@1.0.so
 lib/android.hidl.safe_union@1.0.so
+lib/android.media.audio.common.types-V5-ndk.so
 lib/android.system.suspend-V1-ndk.so
 lib/hw/android.hardware.audio.effect@7.0-impl.so
 lib/hw/android.hardware.audio@7.1-impl.so
@@ -437,6 +441,8 @@ lib/libmedia_helper.so
 lib/libmediautils_vendor.so
 lib/libmemunreachable.so
 lib/libnbaio_mono.so
+lib/libprotobuf-cpp-full-6.33.5.so
+lib/libprotobuf-cpp-lite-6.33.5.so
 lib/libreference-ril.so
 lib/libril.so
 lib/librilutils.so
@@ -464,6 +470,7 @@ lib/soundfx/libreverbwrapper.so
 lib/soundfx/libvisualizer.so
 lib64/android.frameworks.stats-V1-ndk.so
 lib64/android.frameworks.stats-V2-ndk.so
+lib64/android.hardware.audio.common-V5-ndk.so
 lib64/android.hardware.audio.common-util.so
 lib64/android.hardware.audio.common@2.0.so
 lib64/android.hardware.audio.common@5.0.so
@@ -477,6 +484,7 @@ lib64/android.hardware.audio.effect@7.0.so
 lib64/android.hardware.audio@7.0.so
 lib64/android.hardware.audio@7.1-util.so
 lib64/android.hardware.audio@7.1.so
+lib64/android.hardware.bluetooth.audio-V6-ndk.so
 lib64/android.hardware.bluetooth.audio-impl.so
 lib64/android.hardware.bluetooth.audio@2.0.so
 lib64/android.hardware.bluetooth.audio@2.1.so
@@ -532,6 +540,7 @@ lib64/android.hidl.allocator@1.0.so
 lib64/android.hidl.memory.token@1.0.so
 lib64/android.hidl.memory@1.0.so
 lib64/android.hidl.safe_union@1.0.so
+lib64/android.media.audio.common.types-V5-ndk.so
 lib64/android.system.keystore2-V1-ndk.so
 lib64/android.system.suspend-V1-ndk.so
 lib64/hw/android.hardware.audio.effect@7.0-impl.so
@@ -592,6 +601,8 @@ lib64/libonce_cell.dylib.so
 lib64/libpng.so
 lib64/libpower.so
 lib64/libprocessgroup.so
+lib64/libprotobuf-cpp-full-6.33.5.so
+lib64/libprotobuf-cpp-lite-6.33.5.so
 lib64/libreference-ril.so
 lib64/libregex.dylib.so
 lib64/libregex_syntax.dylib.so
@@ -641,6 +652,7 @@ overlay/TeleService__cheetah__auto_generated_rro_vendor.apk
 overlay/Traceur__cheetah__auto_generated_rro_vendor.apk
 overlay/framework-res__cheetah__auto_generated_rro_vendor.apk
 
+overlay/NfcOverlayCheetahGsi.apk
 overlay/PixelNfcOverlayCommon.apk
 
 # Symlinks
@@ -661,6 +673,9 @@ lib64/libtinycompress.so
 # Bluetooth
 lib64/android.hardware.bluetooth-V1-ndk.so
 lib64/android.hardware.bluetooth.finder-V1-ndk.so
+lib64/android.hardware.bluetooth.lmp_event-V1-ndk.so
+lib64/android.hardware.bluetooth.ranging-V2-ndk.so
+lib64/android.hardware.bluetooth.socket-V2-ndk.so
 lib64/hardware.google.bluetooth.bt_channel_avoidance@1.0.so
 
 # Camera
@@ -670,6 +685,7 @@ lib/pixel-power-ext-V1-ndk.so
 
 # Charger
 etc/res/images/charger/battery_fail.png
+etc/res/images/charger/battery_overheat.png
 etc/res/images/charger/battery_scale.png
 etc/res/images/charger/main_font.png
 etc/res/values/charger/animation.txt
@@ -694,6 +710,7 @@ lib/libstagefright_omx_utils.so
 lib/libstagefright_xmlparser.so
 lib64/android.hardware.media.bufferpool2-V2-ndk.so
 lib64/android.hardware.media.bufferpool@2.0.so
+lib64/android.hardware.media.c2-V2-ndk.so
 lib64/android.hardware.media.c2@1.0.so
 lib64/android.hardware.media.c2@1.1.so
 lib64/android.hardware.media.c2@1.2.so
@@ -702,6 +719,7 @@ lib64/android.hardware.media@1.0.so
 lib64/libavservices_minijail.so
 lib64/libcap.so
 lib64/libcodec2.so
+lib64/libcodec2_aidl_V2.so
 lib64/libcodec2_aidl_noisurface.so
 lib64/libcodec2_hal_common.so
 lib64/libcodec2_hidl@1.0.so
@@ -726,6 +744,8 @@ lib64/android.hardware.confirmationui@1.0.so
 lib64/libteeui_hal_support.so
 
 # Contexthub
+lib/android.hardware.contexthub-V5-ndk.so
+lib64/android.hardware.contexthub-V5-ndk.so
 lib64/chre_atoms_log.so
 lib64/chremetrics-cpp.so
 
@@ -753,6 +773,7 @@ lib64/libjson.so
 
 # Nos
 lib64/android.hardware.security.keymint-V3-ndk.so
+lib64/android.hardware.security.keymint-V5-ndk.so
 lib64/libcppbor.so
 lib64/libcppcose_rkp.so
 lib64/libkeymaster_portable.so
@@ -817,10 +838,19 @@ lib/android.hardware.graphics.mapper@2.1.so
 lib/android.hardware.graphics.mapper@3.0.so
 lib/android.hardware.graphics.mapper@4.0.so
 lib/android.hardware.health-V1-ndk.so
+lib/android.hardware.radio-V3-ndk.so
+lib/android.hardware.radio.config-V3-ndk.so
 lib/android.hardware.radio.config@1.0.so
 lib/android.hardware.radio.config@1.1.so
 lib/android.hardware.radio.config@1.2.so
+lib/android.hardware.radio.data-V3-ndk.so
 lib/android.hardware.radio.deprecated@1.0.so
+lib/android.hardware.radio.messaging-V3-ndk.so
+lib/android.hardware.radio.modem-V3-ndk.so
+lib/android.hardware.radio.network-V3-ndk.so
+lib/android.hardware.radio.sap-V1-ndk.so
+lib/android.hardware.radio.sim-V3-ndk.so
+lib/android.hardware.radio.voice-V3-ndk.so
 lib/android.hardware.radio@1.2.so
 lib/android.hardware.radio@1.3.so
 lib/android.hardware.radio@1.4.so
@@ -846,6 +876,7 @@ lib64/android.hardware.graphics.common-V7-ndk.so
 lib64/android.hardware.graphics.common@1.0.so
 lib64/android.hardware.graphics.common@1.1.so
 lib64/android.hardware.graphics.common@1.2.so
+lib64/android.hardware.graphics.composer3-V5-ndk.so
 lib64/android.hardware.graphics.composer@2.1-resources.so
 lib64/android.hardware.graphics.composer@2.1.so
 lib64/android.hardware.graphics.composer@2.2-resources.so
@@ -857,6 +888,7 @@ lib64/android.hardware.graphics.mapper@2.1.so
 lib64/android.hardware.graphics.mapper@3.0.so
 lib64/android.hardware.graphics.mapper@4.0.so
 lib64/android.hardware.health-V1-ndk.so
+lib64/android.hardware.health-V5-ndk.so
 lib64/android.hardware.input.common-V1-ndk.so
 lib64/android.hardware.input.processor-V1-ndk.so
 lib64/android.hardware.keymaster-V4-ndk.so
@@ -870,34 +902,51 @@ lib64/android.hardware.neuralnetworks@1.2.so
 lib64/android.hardware.neuralnetworks@1.3.so
 lib64/android.hardware.oemlock-V1-ndk.so
 lib64/android.hardware.power-V2-ndk.so
+lib64/android.hardware.power-V7-ndk.so
 lib64/android.hardware.power@1.0.so
 lib64/android.hardware.power@1.1.so
 lib64/android.hardware.power@1.2.so
+lib64/android.hardware.radio-V3-ndk.so
+lib64/android.hardware.radio.config-V3-ndk.so
 lib64/android.hardware.radio.config@1.0.so
 lib64/android.hardware.radio.config@1.1.so
 lib64/android.hardware.radio.config@1.2.so
+lib64/android.hardware.radio.data-V3-ndk.so
 lib64/android.hardware.radio.deprecated@1.0.so
+lib64/android.hardware.radio.messaging-V3-ndk.so
+lib64/android.hardware.radio.modem-V3-ndk.so
+lib64/android.hardware.radio.network-V3-ndk.so
+lib64/android.hardware.radio.sap-V1-ndk.so
+lib64/android.hardware.radio.sim-V3-ndk.so
+lib64/android.hardware.radio.voice-V3-ndk.so
 lib64/android.hardware.radio@1.2.so
 lib64/android.hardware.radio@1.3.so
 lib64/android.hardware.radio@1.4.so
 lib64/android.hardware.radio@1.5.so
 lib64/android.hardware.radio@1.6.so
+lib64/android.hardware.usb-V4-ndk.so
 lib64/android.hardware.vibrator-V3-ndk.so
+lib64/android.hardware.weaver-V3-ndk.so
 lib64/android.hidl.token@1.0-utils.so
 lib64/android.hidl.token@1.0.so
 lib64/com.google.hardware.pixel.display-V4-ndk.so
 lib64/com.google.hardware.pixel.display-V15-ndk.so
+lib64/com.google.hardware.pixel.display-V21-ndk.so
+lib64/pixel-power-ext-V2-ndk.so
+
 # Misc
 lib/libbinder.so
 lib/libdmabufheap.so
 lib/libevent.so
 lib/libgralloctypes.so
+lib/libgui.so
 lib/libion.so
 lib/libprocessgroup.so
 lib/libui.so
 lib64/libdrm.so
 lib64/libevent.so
 lib64/libgralloctypes.so
+lib64/libgui.so
 lib64/libion.so
 lib64/libui.so
 
@@ -908,7 +957,37 @@ framework/oat/arm64/com.google.android.camera.experimental2022.odex
 framework/oat/arm64/com.google.android.camera.experimental2022.vdex
 
 # Rust
+lib64/libaconfig_storage_file.dylib.so
+lib64/libaconfig_storage_protos.dylib.so
+lib64/libaconfig_storage_read_api.dylib.so
+lib64/libanstyle.dylib.so
+lib64/libanyhow.dylib.so
+lib64/libbionic_bindgen.dylib.so
+lib64/libbitflags.dylib.so
+lib64/libbytes.dylib.so
+lib64/libclap.dylib.so
+lib64/libclap_builder.dylib.so
+lib64/libclap_lex.dylib.so
+lib64/libcutils_bindgen.dylib.so
+lib64/libcxx.dylib.so
+lib64/libenv_logger.dylib.so
+lib64/libfoldhash.dylib.so
+lib64/liblazy_static.dylib.so
+lib64/liblibc.dylib.so
+lib64/liblogger.dylib.so
+lib64/libmemmap2.dylib.so
+lib64/libmemoffset.dylib.so
+lib64/libnix.dylib.so
+lib64/libprotobuf.dylib.so
+lib64/libprotobuf_support.dylib.so
 lib64/libregex_automata.dylib.so
+lib64/librustutils.dylib.so
+lib64/libserde.dylib.so
+lib64/libserde_core.dylib.so
+lib64/libstrsim.dylib.so
+lib64/libsystem_properties_bindgen_sys.dylib.so
+lib64/libthiserror.dylib.so
+
 # Completely skip files that are not required
 
 # Edge TPU

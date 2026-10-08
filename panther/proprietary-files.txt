@@ -3,6 +3,9 @@
 # product partition
 
 # AiAi
+product/priv-app/DeviceIntelligenceNetworkPrebuiltAstrea/DeviceIntelligenceNetworkPrebuiltAstrea.apk;PRESIGNED
+product/priv-app/DevicePersonalizationAiAiPrebuiltPixel2022/DevicePersonalizationAiAiPrebuiltPixel2022.apk;PRESIGNED
+
 # Audio
 product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
@@ -12,6 +15,8 @@ product/etc/firmware/music_detector.sound_model_tflite
 
 # Camera extensions
 product/etc/permissions/androidx.camera.extensions.impl.xml
+product/priv-app/PixelCameraServices/PixelCameraServices.apk;PRESIGNED
+
 # Camera services
 product/etc/permissions/com.google.pixel.camera.connectivity.impl.xml
 product/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml
@@ -35,6 +40,10 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 # NFC
 product/etc/libnfc-nci.conf
 
+# Now Playing
+product/etc/default-permissions/default-permissions_nowplaying.xml
+product/etc/sysconfig/nowplaying_app_26q1.xml
+
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
 product/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml
@@ -51,9 +60,11 @@ product/etc/sysconfig/pixel_experience_2021_midyear.xml
 product/etc/sysconfig/pixel_experience_2022.xml
 product/etc/sysconfig/pixel_experience_2022_midyear.xml
 # Radio
+product/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml
 product/etc/permissions/com.android.sdm.plugins.connmo.xml
 product/etc/permissions/com.android.sdm.plugins.dcmo.xml
 product/etc/permissions/com.android.sdm.plugins.diagmon.xml
+product/etc/permissions/privapp-permissions_com.google.android.apps.carrier.carrierwifi.xml
 product/lib/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmengine.so
 product/lib/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmjavaplugin.so
 product/lib64/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmengine.so
@@ -94,6 +105,7 @@ system_ext/app/PersistentBackgroundCameraServices/PersistentBackgroundCameraServ
 system_ext/etc/permissions/com.google.pixel.camera.connectivity.xml
 system_ext/etc/permissions/com.google.pixel.camera.services.cameraidremapper.xml
 system_ext/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.xml
+system_ext/etc/vintf/camera_interference_avoidance_framework_compatibility_matrix_system_ext
 system_ext/etc/vintf/manifest/com.google.pixel.camera.services@1.0-service-google.xml
 system_ext/framework/com.google.pixel.camera.connectivity.jar
 system_ext/framework/com.google.pixel.camera.services.cameraidremapper.jar
