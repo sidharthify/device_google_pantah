@@ -114,6 +114,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
 	vendor.mali.platform.config=/vendor/etc/mali/platform.config \
 	vendor.mali.debug.config=/vendor/etc/mali/debug.config \
+	vendor.mali.base_protected_max_core_count=4 \
 	vendor.mali.base_protected_tls_max=67108864 \
 	vendor.mali.platform_agt_frequency_khz=24576
 
