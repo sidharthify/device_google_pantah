@@ -113,3 +113,5 @@
 /vendor/lib(64)?/libion_google\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/pixel-power-ext-V1-ndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor-pixelatoms-cpp\.so u:object_r:same_process_hal_file:s0
+/dev/logbuffer_btlpm u:object_r:logbuffer_device:s0
+/dev/logbuffer_tty18 u:object_r:logbuffer_device:s0
