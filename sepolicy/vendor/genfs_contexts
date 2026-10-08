@@ -58,6 +58,7 @@ genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.6.au
 genfscon sysfs /devices/platform/10db0000.spi/spi_master/spi16/spi16.0/uwb/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0025/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10d60000.hsi2c/i2c-13/13-0069/power_supply/dc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_pwr_vreg u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/idle_delay_ms u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/time_in_state u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_extinfo u:object_r:sysfs_display:s0
