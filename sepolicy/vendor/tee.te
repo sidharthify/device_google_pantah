@@ -1,7 +1,10 @@
+read_fstab(tee)
+
 wakelock_use(tee)
 
 allow tee mnt_vendor_file:dir r_dir_perms;
 allow tee persist_file:dir r_dir_perms;
 allow tee persist_ss_file:dir create_dir_perms;
 allow tee persist_ss_file:file create_file_perms;
+allow tee tee_data_file:dir rw_dir_perms;
 allow tee tee_data_file:lnk_file r_file_perms;
