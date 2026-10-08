@@ -92,6 +92,7 @@ genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firm
 genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/19000000.aoc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sjtag_gsa/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/sjtag_ap/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
