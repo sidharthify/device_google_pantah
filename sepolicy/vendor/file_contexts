@@ -93,6 +93,7 @@
 /vendor/bin/hw/android\.hardware\.composer\.hwc3-service\.pixel u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/hw/android\.hardware\.health-service\.gs201 u:object_r:hal_health_default_exec:s0
+/vendor/bin/hw/android\.hardware\.qorvo\.uwb\.service u:object_r:hal_uwb_vendor_default_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto u:object_r:hal_secure_element_st54spi_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-service-gto-ese2 u:object_r:hal_secure_element_st33spi_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.2-uicc-service u:object_r:hal_secure_element_uicc_exec:s0

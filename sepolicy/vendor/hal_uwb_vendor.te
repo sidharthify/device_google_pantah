@@ -1,3 +1,4 @@
+hal_server_domain(hal_uwb_vendor_default, hal_uwb)
 hal_server_domain(hal_uwb_vendor_default, hal_uwb_vendor)
 
 add_service(hal_uwb_vendor_default, hal_uwb_vendor_service)
@@ -6,6 +7,8 @@ binder_call(hal_uwb_vendor_client, hal_uwb_vendor_server)
 binder_call(hal_uwb_vendor_default, uwb_vendor_app)
 binder_call(hal_uwb_vendor_server, hal_uwb_vendor_client)
 binder_call(hal_uwb_vendor_server, servicemanager)
+
+get_prop(hal_uwb_vendor_default, vendor_uwb_calibration_prop)
 
 hal_attribute_service(hal_uwb_vendor, hal_uwb_vendor_service)
 
