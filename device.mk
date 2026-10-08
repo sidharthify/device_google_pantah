@@ -102,6 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_USES_VULKAN = true
 
 PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.egl=mali \
 	ro.hardware.vulkan=mali
 
 # Mali Configuration Properties
