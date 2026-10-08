@@ -3,6 +3,8 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+
 # Inherit device configuration
 DEVICE_CODENAME := panther
 DEVICE_PATH := device/google/pantah
@@ -37,6 +39,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7
+PRODUCT_NAME := yaap_$(DEVICE_CODENAME)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
