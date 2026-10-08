@@ -75,3 +75,5 @@ vendor.rild.libpath=libsitril.so
 # UWB
 ro.vendor.uwb.calibration.calibrationpaths=/vendor/etc/uwb/calib_paths
 
+# UHDR Gore
+debug.hwui.enable_uhdr_gore=true

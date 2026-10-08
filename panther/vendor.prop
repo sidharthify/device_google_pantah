@@ -66,3 +66,5 @@ vendor.audio.hapticgenerator.distortion.output.gain=0.38
 # zram
 vendor.zram.size=3g
 
+# UHDR Gore
+debug.hwui.enable_uhdr_gore=true
