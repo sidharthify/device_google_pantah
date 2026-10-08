@@ -95,6 +95,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Carrier configuration default location
 PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.radio.config.carrier_config_dir=/vendor/firmware/carrierconfig
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.active_modems.max_count=2
 
