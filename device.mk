@@ -177,6 +177,9 @@ WIFI_PRIV_CMD_UPDATE_MBO_CELL_STATUS := enabled
 PRODUCT_PROPERTY_OVERRIDES += \
        debug.c2.use_dmabufheaps=1 \
        media.c2.dmabuf.padding=512 \
+       debug.stagefright.ccodec_delayed_params=1 \
+       ro.vendor.gpu.dataspace=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
