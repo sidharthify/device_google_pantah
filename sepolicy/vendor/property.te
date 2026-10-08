@@ -30,3 +30,4 @@ vendor_internal_prop(vendor_usb_config_prop)
 
 vendor_restricted_prop(vendor_arm_runtime_option_prop)
 vendor_restricted_prop(vendor_bluetooth_prop)
+vendor_restricted_prop(vendor_fingerprint_prop)
