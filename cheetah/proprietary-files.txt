@@ -134,6 +134,11 @@ system_ext/framework/google-ril.jar
 system_ext/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
 system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk
 system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_DVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_DVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_EVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_EVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_0109_P22_DVT.up
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.in
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.up
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_EVT.up

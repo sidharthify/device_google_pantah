@@ -226,6 +226,10 @@ build.prop
 etc/NOTICE.xml.gz
 etc/a2dp_audio_policy_configuration_7_0.xml
 etc/a2dp_in_audio_policy_configuration_7_0.xml
+etc/aconfig/flag.info
+etc/aconfig/flag.map
+etc/aconfig/flag.val
+etc/aconfig/package.map
 etc/aconfig_flags.pb
 etc/aidl/hfp/hfp_codec_capabilities.xml
 etc/aidl/le_audio/aidl_audio_set_configurations.bfbs
@@ -348,6 +352,7 @@ etc/selinux/vendor_property_contexts
 etc/selinux/vendor_seapp_contexts
 etc/selinux/vendor_sepolicy.cil
 etc/selinux/vendor_service_contexts
+etc/selinux/vendor_tee_service_contexts
 etc/selinux/vndservice_contexts
 etc/sysconfig/component-overrides.xml
 etc/usb_audio_policy_configuration.xml
@@ -543,6 +548,7 @@ lib64/hw/vibrator.default.so
 lib64/libOpenCL.so
 lib64/lib_android_keymaster_keymint_utils.so
 lib64/libaconfig_storage_read_api_cc.so
+lib64/libaho_corasick.dylib.so
 lib64/libalsautils.so
 lib64/libalsautilsv2.so
 lib64/libandroid_log_sys.dylib.so
@@ -561,6 +567,7 @@ lib64/libcutils.so
 lib64/libdmabufheap.so
 lib64/libeffects.so
 lib64/libeffectsconfig.so
+lib64/libenv_filter.dylib.so
 lib64/libflatbuffers-cpp.so
 lib64/libfmq.so
 lib64/libgatekeeper.so
@@ -575,6 +582,7 @@ lib64/libkeystore-engine-wifi-hidl.so
 lib64/liblog_rust.dylib.so
 lib64/libmedia_helper.so
 lib64/libmediautils_vendor.so
+lib64/libmemchr.dylib.so
 lib64/libmemunreachable.so
 lib64/libnbaio_mono.so
 lib64/libnl.so
@@ -583,6 +591,8 @@ lib64/libpng.so
 lib64/libpower.so
 lib64/libprocessgroup.so
 lib64/libreference-ril.so
+lib64/libregex.dylib.so
+lib64/libregex_syntax.dylib.so
 lib64/libril.so
 lib64/librilutils.so
 lib64/libspeexresampler.so
@@ -687,6 +697,7 @@ lib64/android.hardware.media@1.0.so
 lib64/libavservices_minijail.so
 lib64/libcap.so
 lib64/libcodec2.so
+lib64/libcodec2_aidl_noisurface.so
 lib64/libcodec2_hal_common.so
 lib64/libcodec2_hidl@1.0.so
 lib64/libcodec2_hidl@1.1.so
@@ -866,16 +877,21 @@ lib64/android.hardware.vibrator-V3-ndk.so
 lib64/android.hidl.token@1.0-utils.so
 lib64/android.hidl.token@1.0.so
 lib64/com.google.hardware.pixel.display-V4-ndk.so
+lib64/com.google.hardware.pixel.display-V15-ndk.so
 # Misc
 lib/libbinder.so
+lib/libdmabufheap.so
 lib/libevent.so
 lib/libgralloctypes.so
 lib/libion.so
 lib/libprocessgroup.so
 lib/libui.so
+lib64/libdrm.so
 lib64/libevent.so
 lib64/libgralloctypes.so
 lib64/libion.so
+lib64/libui.so
+
 # Odex
 framework/oat/arm/com.google.android.camera.experimental2022.odex
 framework/oat/arm/com.google.android.camera.experimental2022.vdex
