@@ -118,6 +118,7 @@
         </interface>
     </hal>
         <name>vendor.google.wifi_ext</name>
+        <version>2-4</version>
         <interface>
             <name>IWifiExt</name>
             <instance>default</instance>
