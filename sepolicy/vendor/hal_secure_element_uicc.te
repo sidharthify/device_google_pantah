@@ -3,3 +3,4 @@ hal_server_domain(hal_secure_element_uicc, hal_secure_element)
 
 init_daemon_domain(hal_secure_element_uicc)
 
+allow hal_secure_element_uicc hal_exynos_rild_hwservice:hwservice_manager find;
