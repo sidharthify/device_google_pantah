@@ -5,6 +5,7 @@ add_service(hal_graphics_composer_default, hal_pixel_display_service)
 add_service(hal_graphics_composer_default, vendor_displaycolor_service)
 add_service(hal_graphics_composer_default, vendor_surfaceflinger_vndservice)
 
+get_prop(hal_graphics_composer_default, boot_status_prop)
 get_prop(hal_graphics_composer_default, device_config_surface_flinger_native_boot_prop)
 get_prop(hal_graphics_composer_default, vendor_persist_sys_default_prop)
 
@@ -12,6 +13,8 @@ set_prop(hal_graphics_composer_default, vendor_display_prop)
 
 vndbinder_use(hal_graphics_composer_default)
 
+allow hal_graphics_composer_default dump_exynos_display:fd use;
+allow hal_graphics_composer_default dump_exynos_display:fifo_file { append write };
 allow hal_graphics_composer_default hal_dumpstate_default:fd use;
 allow hal_graphics_composer_default hal_dumpstate_default:fifo_file { append write };
 allow hal_graphics_composer_default mnt_vendor_file:dir search;

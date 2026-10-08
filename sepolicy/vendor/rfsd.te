@@ -1,6 +1,9 @@
 type rfsd, domain;
+type rfsd_exec, exec_type, file_type, vendor_file_type;
+
 init_daemon_domain(rfsd)
 
+r_dir_file(rfsd, modem_img_file)
 r_dir_file(rfsd, vendor_fw_file)
 
 set_prop(rfsd, vendor_modem_prop)

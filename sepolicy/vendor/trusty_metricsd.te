@@ -1,4 +1,6 @@
 type trusty_metricsd, domain;
+type trusty_metricsd_exec, exec_type, file_type, vendor_file_type;
+
 binder_call(trusty_metricsd, system_server)
 
 binder_use(trusty_metricsd)

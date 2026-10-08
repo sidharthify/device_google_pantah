@@ -1,3 +1,5 @@
+app_domain(pixelntnservice_app)
+
 typeattribute pixelntnservice_app coredomain;
 
 set_prop(pixelntnservice_app, telephony_modem_prop)

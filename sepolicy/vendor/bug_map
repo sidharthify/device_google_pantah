@@ -1,0 +1,7 @@
+ramdump proc_bootconfig file b/181615626
+ramdump public_vendor_default_prop file b/161103878
+ramdump vendor_hw_plat_prop file b/161103878
+rfsd vendor_cbd_prop file b/412237886
+shell vendor_intelligence_prop file b/378120929
+system_server build_bootimage_prop file b/413561511
+uwb_vendor_app graphics_config_writable_prop file b/409895896

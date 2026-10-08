@@ -1,4 +1,6 @@
 type init-display-sh, domain;
+type init-display-sh_exec, exec_type, file_type, vendor_file_type;
+
 init_daemon_domain(init-display-sh)
 
 allow init-display-sh kmsg_device:chr_file w_file_perms;

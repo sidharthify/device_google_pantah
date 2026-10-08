@@ -1,4 +1,6 @@
 type modem_svc_sit, domain;
+type modem_svc_sit_exec, exec_type, file_type, vendor_file_type;
+
 binder_call(modem_svc_sit, rild)
 
 get_prop(modem_svc_sit, hwservicemanager_prop)
@@ -11,7 +13,12 @@ init_daemon_domain(modem_svc_sit)
 
 perfetto_producer(modem_svc_sit)
 
+r_dir_file(modem_svc_sit, modem_img_file)
+
 set_prop(modem_svc_sit, vendor_modem_prop)
+
+unix_socket_connect(modem_svc_sit, property, traced)
+unix_socket_connect(modem_svc_sit, traced_producer, init)
 
 allow modem_svc_sit hal_exynos_rild_hwservice:hwservice_manager find;
 allow modem_svc_sit mnt_vendor_file:dir r_dir_perms;

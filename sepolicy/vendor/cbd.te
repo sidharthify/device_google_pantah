@@ -1,5 +1,11 @@
 type cbd, domain;
+type cbd_exec, exec_type, file_type, vendor_file_type;
+
 get_prop(cbd, telephony_modem_prop)
+
+init_daemon_domain(cbd)
+
+r_dir_file(cbd, modem_img_file)
 
 set_prop(cbd, vendor_cbd_prop)
 set_prop(cbd, vendor_modem_prop)

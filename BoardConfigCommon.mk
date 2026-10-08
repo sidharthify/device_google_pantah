@@ -231,6 +231,27 @@ endif
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_MODULE_DIR)/system_dlkm.modules.load 2>/dev/null))
 BOARD_SYSTEM_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notdir $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)))
 
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/googlebattery \
+    hardware/google/pixel-sepolicy/input \
+    hardware/google/pixel-sepolicy/powerstats \
+    $(DEVICE_PATH)/sepolicy/certificates \
+    $(DEVICE_PATH)/sepolicy/recovery \
+    $(DEVICE_PATH)/sepolicy/vendor
+
+PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/product/private
+
+PRODUCT_PUBLIC_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/product/public
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/system_ext/private
+
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/system_ext/public
+
 # Battery options
 BOARD_KERNEL_CMDLINE += at24.write_timeout=100
 
