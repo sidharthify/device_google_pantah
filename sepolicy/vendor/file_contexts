@@ -40,8 +40,16 @@
 /dev/dma_heap/vstream-secure u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dri/card0 u:object_r:graphics_device:s0
 /dev/fimg2d u:object_r:graphics_device:s0
+/dev/logbuffer_cpm u:object_r:logbuffer_device:s0
 /dev/logbuffer_maxfg u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_base u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_base_monitor u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_flip u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_flip_monitor u:object_r:logbuffer_device:s0
+/dev/logbuffer_maxfg_monitor u:object_r:logbuffer_device:s0
 /dev/logbuffer_maxq u:object_r:logbuffer_device:s0
+/dev/logbuffer_pca9468 u:object_r:logbuffer_device:s0
+/dev/logbuffer_pca9468_tcpm u:object_r:logbuffer_device:s0
 /dev/logbuffer_rtx u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc u:object_r:logbuffer_device:s0
 /dev/logbuffer_tcpm u:object_r:logbuffer_device:s0
