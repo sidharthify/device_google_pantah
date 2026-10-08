@@ -51,6 +51,7 @@
         </interface>
     </hal>
         <name>com.google.face.debug</name>
+        <version>3-4</version>
         <interface>
             <name>IDebugHost</name>
             <instance>default</instance>
