@@ -16,6 +16,7 @@
 /dev/block/platform/14700000\.ufs/by-name/dtbo_[ab] u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/efs u:object_r:efs_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/efs_backup u:object_r:efs_block_device:s0
+/dev/block/platform/14700000\.ufs/by-name/fips u:object_r:fips_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/frp u:object_r:frp_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/gsa_[ab] u:object_r:custom_ab_block_device:s0
 /dev/block/platform/14700000\.ufs/by-name/init_boot_[ab] u:object_r:boot_block_device:s0

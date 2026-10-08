@@ -128,12 +128,15 @@ genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dump
 genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/28000000.mali/kprcs u:object_r:sysfs_gpu:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/14700000.ufs/vendor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/11210000.usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sjtag_gsa/interface u:object_r:sysfs_sjtag:s0
+genfscon sysfs /devices/platform/14700000.ufs/model u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/sjtag_ap/interface u:object_r:sysfs_sjtag:s0
 genfscon sysfs /devices/platform/19000000.aoc/reset u:object_r:sysfs_aoc_reset:s0
 genfscon sysfs /devices/platform/1ce00000.janeiro u:object_r:sysfs_edgetpu:s0
+genfscon sysfs /devices/platform/14700000.ufs/rev u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/gpio_keys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/sound-aoc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/100a0000.LITTLE u:object_r:sysfs_thermal:s0
