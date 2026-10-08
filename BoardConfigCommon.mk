@@ -250,6 +250,11 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 AB_OTA_PARTITIONS += \
     vbmeta_vendor
 
+# Verified Boot
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+endif
+
 BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
 
 BOARD_KERNEL_CMDLINE += fips140.load_sequential=1
