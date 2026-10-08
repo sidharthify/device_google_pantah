@@ -2,5 +2,7 @@ app_domain(omadm_app)
 
 net_domain(omadm_app)
 
+typeattribute omadm_app coredomain;
+
 allow omadm_app app_api_service:service_manager find;
 allow omadm_app radio_service:service_manager find;

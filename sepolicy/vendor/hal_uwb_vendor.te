@@ -2,6 +2,8 @@ type hal_uwb_vendor_default, domain;
 type hal_uwb_vendor_default_exec, exec_type, file_type, vendor_file_type;
 type hal_uwb_vendor_service, hal_service_type, service_manager_type;
 
+dump_hal(hal_uwb_vendor)
+
 hal_server_domain(hal_uwb_vendor_default, hal_uwb)
 hal_server_domain(hal_uwb_vendor_default, hal_uwb_vendor)
 

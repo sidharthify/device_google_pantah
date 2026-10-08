@@ -2,6 +2,8 @@ system_internal_prop(vendor_pss_systemphenotype_prop)
 
 system_public_prop(vendor_edgetpu_service_prop)
 system_public_prop(vendor_intelligence_prop)
+system_public_prop(vendor_logger_prop)
+
 system_vendor_config_prop(vendor_camera_pbcs_debug_prop)
 system_vendor_config_prop(vendor_edgetpu_cpu_scheduler_prop)
 system_vendor_config_prop(vendor_edgetpu_runtime_prop)
