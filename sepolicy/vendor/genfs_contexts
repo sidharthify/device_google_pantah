@@ -21,6 +21,8 @@ genfscon sysfs /devices/platform/17000020.devfreq_int/devfreq/17000020.devfreq_i
 genfscon sysfs /devices/platform/17000050.devfreq_cam/devfreq/17000050.devfreq_cam/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/cur_freq u:object_r:sysfs_devfreq_cur:s0
 genfscon sysfs /devices/platform/17000070.devfreq_mfc/devfreq/17000070.devfreq_mfc/cur_freq u:object_r:sysfs_devfreq_cur:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.4.auto/usb2/2-1 u:object_r:sysfs_uhid:s0
+genfscon sysfs /devices/platform/11210000.usb/11210000.dwc3/xhci-hcd-exynos.5.auto/usb2/2-1 u:object_r:sysfs_uhid:s0
 genfscon sysfs /devices/platform/10d10000.spi/spi_master/spi0/spi0.0/synaptics_tcm.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/max_freq u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/platform/17000060.devfreq_tnr/devfreq/17000060.devfreq_tnr/min_freq u:object_r:sysfs_camera:s0
