@@ -13,3 +13,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SettingsOverlayGFE4J \
     SettingsOverlayGE2AE \
+    SettingsOverlayGP4BC \
+    SettingsOverlayCheetah
+
