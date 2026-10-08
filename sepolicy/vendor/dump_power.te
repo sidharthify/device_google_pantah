@@ -1,3 +1,4 @@
+allow dump_power battery_history_device:chr_file r_file_perms;
 allow dump_power logbuffer_device:chr_file r_file_perms;
 allow dump_power mitigation_vendor_data_file:dir r_dir_perms;
 allow dump_power mitigation_vendor_data_file:file r_file_perms;
