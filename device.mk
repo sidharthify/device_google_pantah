@@ -262,6 +262,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.sys.modem.logging.loc = /data/vendor/slog \
 	ro.vendor.cbd.modem_removable = "1" \
 	ro.vendor.cbd.modem_type = "s5100sit" \
+	persist.vendor.sys.modem.logging.br_num=5 \
+	persist.vendor.sys.modem.logging.enable=true
+
 # Enable silent CP crash handling
 PRODUCT_PROPERTY_OVERRIDES += \
 # Add support dual SIM mode
