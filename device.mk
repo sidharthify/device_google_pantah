@@ -103,6 +103,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # HWUI
 TARGET_USES_VULKAN = true
 
+# Install the OpenCL ICD Loader
+PRODUCT_SOONG_NAMESPACES += external/OpenCL-ICD-Loader
+PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.hardware.egl=mali \
 	ro.hardware.vulkan=mali
