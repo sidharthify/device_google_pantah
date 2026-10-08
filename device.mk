@@ -11,9 +11,34 @@ TARGET_KERNEL_DIR := device/google/pantah-kernels/6.1/
 TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/kernel-headers
 TARGET_PREBUILT_KERNEL := device/google/pantah-kernels/6.1/Image.lz4
 
+# Disable OMX
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.media.omx=0
+
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.ipsec_tunnel_migration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnel_migration.xml
+
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/device_framework_matrix_product.xml
+
+# sscoredump
+PRODUCT_PROPERTY_OVERRIDES += vendor.debug.ssrdump.type=sscoredump
+
+# Ensure enough free space to create zram backing device
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.zram_backing_device_min_free_mb=1536
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
+# misc_writer
+PRODUCT_PACKAGES += \
+    misc_writer
+
 TARGET_BOARD_PLATFORM := gs201
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -182,6 +207,7 @@ PRODUCT_HOST_PACKAGES += \
 
 # CHRE
 ## HAL
+PRODUCT_PACKAGES += android.hardware.contexthub-service.generic
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.context_hub.xml
 
@@ -246,7 +272,32 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_policy=2
 PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=2
 PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
 
+# Audio HAL configurations
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
+    frameworks/av/services/audiopolicy/config/hearing_aid_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration_7_0.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
 # Audio HAL Server & Default Implementations
+PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.bluetooth.audio-impl
+
+# Audio HAL libraries
+PRODUCT_PACKAGES += \
+    audio.usb.default \
+    audio.usbv2.default \
+    audio.bluetooth.default \
+    audio.r_submix.default
+
+# Camera
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/camera
+
 # Connectivity
 PRODUCT_PACKAGES += \
         ConnectivityOverlay
@@ -255,7 +306,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.health.storage-service.default
 
+# Battery Mitigation
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.battery_mitigation.aidl.enable=true
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
@@ -453,6 +507,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.multisim_switch_support=true
 
+PRODUCT_PACKAGES += \
+    android.hardware.location.gps.prebuilt.xml
+
+endif
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 ## Audio properties
@@ -476,8 +535,17 @@ PRODUCT_PACKAGES += vndservicemanager
 PRODUCT_PACKAGES += vndservice
 
 ## Start packet router
+PRODUCT_PROPERTY_OVERRIDES += vendor.pktrouter=1
+
 # Thermal HAL
 PRODUCT_PROPERTY_OVERRIDES += persist.vendor.enable.thermal.genl=true
+
+# Tflite Darwinn delegate property
+PRODUCT_VENDOR_PROPERTIES += vendor.edgetpu.tflite_delegate.force_disable_io_coherency=0
+
+# Edgetpu CPU scheduler property
+PRODUCT_VENDOR_PROPERTIES += vendor.edgetpu.cpu_scheduler.policy=FIFO
+PRODUCT_VENDOR_PROPERTIES += vendor.edgetpu.cpu_scheduler.priority=99
 
 # A/B support
 PRODUCT_PACKAGES += \
