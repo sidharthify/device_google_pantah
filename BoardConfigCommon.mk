@@ -7,6 +7,7 @@
 #
 
 # Security - must be defined before the rest of the board configuration
+BOOT_SECURITY_PATCH := 2025-12-05
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 include build/make/target/board/BoardConfigMainlineCommon.mk
