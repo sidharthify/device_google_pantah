@@ -534,6 +534,8 @@ include hardware/google/pixel/HardwareInfo/HardwareInfo.mk
 PRODUCT_PRODUCT_PROPERTIES += \
 	dumpstate.strict_run=false
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
 PRODUCT_COPY_FILES += \
