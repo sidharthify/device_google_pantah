@@ -361,6 +361,7 @@ genfscon sysfs /wlan_ptracker u:object_r:sysfs_ptracker:s0
 genfscon sysfs /class/thermal u:object_r:sysfs_thermal:s0
 genfscon sysfs /wifi u:object_r:sysfs_wifi:s0
 genfscon tracefs /events/dmabuf_heap/dma_heap_stat u:object_r:debugfs_tracing:s0
+genfscon proc /bluetooth/sleep/wakelock_ctrl u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/btwrite u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/btwake u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/lpm u:object_r:proc_bluetooth_writable:s0
