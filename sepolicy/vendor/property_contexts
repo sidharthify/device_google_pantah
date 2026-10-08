@@ -14,6 +14,7 @@ persist.vendor.tcpdump.log.alwayson u:object_r:vendor_tcpdump_log_prop:s0
 persist.vendor.testing_battery_profile u:object_r:vendor_battery_profile_prop:s0
 persist.vendor.usb. u:object_r:vendor_usb_config_prop:s0
 ro.vendor.config.build_carrier u:object_r:vendor_carrier_prop:s0
+ro.vendor.hwc.drm.device u:object_r:vendor_display_prop:s0
 ro.vendor.sys. u:object_r:vendor_ro_sys_default_prop:s0
 ro.vendor.sys.modem. u:object_r:vendor_modem_prop:s0
 vendor.battery.defender. u:object_r:vendor_battery_defender_prop:s0
