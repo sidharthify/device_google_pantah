@@ -26,3 +26,4 @@ vendor_internal_prop(vendor_telephony_app_prop)
 vendor_internal_prop(vendor_trusty_storage_prop)
 vendor_internal_prop(vendor_usb_config_prop)
 
+vendor_restricted_prop(vendor_arm_runtime_option_prop)
