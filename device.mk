@@ -73,6 +73,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
 
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.context_hub.xml
+
 # Userdata Checkpointing OTA GC
 PRODUCT_PACKAGES += \
 	checkpoint_gc
