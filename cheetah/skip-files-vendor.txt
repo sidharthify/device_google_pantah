@@ -729,6 +729,7 @@ lib64/libteeui_hal_support.so
 lib64/chre_atoms_log.so
 lib64/chremetrics-cpp.so
 
+# Dumpstate
 lib64/android.hardware.dumpstate-V1-ndk.so
 lib64/libdumpstateutil.so
 

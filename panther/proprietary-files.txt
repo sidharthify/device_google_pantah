@@ -173,3 +173,7 @@ system_ext/etc/vintf/imageprocessing_hal_framework_compatibility_matrix_system_e
 system_ext/etc/permissions/vzw_mvs_permissions.xml
 system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 
+# Watchdog
+system_ext/bin/gs_watchdogd
+system_ext/etc/init/init.gs_watchdogd.rc
+
