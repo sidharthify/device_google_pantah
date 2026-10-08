@@ -1,3 +1,9 @@
+#
+# Copyright (C) The Android Open Source Project
+# Copyright (C) The LineageOS Project
+# Copyright (C) Yet Another AOSP Project
+#
+
 # HBM
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayPanther

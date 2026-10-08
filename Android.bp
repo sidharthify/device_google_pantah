@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) The Android Open Source Project
+ * Copyright (C) The LineageOS Project
+ * Copyright (C) Yet Another AOSP Project
+ *
+ */
+
 soong_namespace {
     imports: [
         "hardware/google/interfaces",

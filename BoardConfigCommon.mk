@@ -1,5 +1,8 @@
 #
 # SPDX-FileCopyrightText: The Android Open Source Project
+# SPDX-FileCopyrightText: 2025 The LineageOS Project
+# SPDX-FileCopyrightText: 2025 Yet Another AOSP Project
+# SPDX-FileCopyrightText: 2025 The Calyx Institute
 # SPDX-License-Identifier: Apache-2.0
 #
 

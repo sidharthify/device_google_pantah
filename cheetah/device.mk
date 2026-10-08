@@ -1,3 +1,9 @@
+#
+# Copyright (C) The Android Open Source Project
+# Copyright (C) The LineageOS Project
+# Copyright (C) Yet Another AOSP Project
+#
+
 # Init
 PRODUCT_PACKAGES += \
     init.recovery.cheetah.touch.rc

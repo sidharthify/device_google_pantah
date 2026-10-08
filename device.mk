@@ -1,5 +1,8 @@
 #
 # SPDX-FileCopyrightText: The Android Open Source Project
+# SPDX-FileCopyrightText: 2025 The LineageOS Project
+# SPDX-FileCopyrightText: 2025 Yet Another AOSP Project
+# SPDX-FileCopyrightText: 2025 The Calyx Institute
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -603,6 +606,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
+
+### Build necessary packages for vendor
 
 # Dumpstate
 PRODUCT_PACKAGES += \
