@@ -75,12 +75,14 @@ genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup u:object_r:sysfs
 genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/14700000.ufs/device_descriptor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/health_descriptor u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/28000000.mali/dma_buf_gpu_mem u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_unmap_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_read_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_sync_cnt u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/28000000.mali/time_in_state u:object_r:sysfs_cpu:s0
 genfscon sysfs /devices/platform/28000000.mali/hint_min_freq u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/28000000.mali/total_gpu_mem u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/14700000.ufs/clkgate_enable u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/19000000.aoc/coredump_count u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/28000000.mali/power_policy u:object_r:sysfs_gpu:s0
@@ -102,6 +104,7 @@ genfscon sysfs /devices/platform/14700000.ufs/io_stats u:object_r:sysfs_scsi_dev
 genfscon sysfs /devices/platform/19000000.aoc/firmware u:object_r:sysfs_aoc_firmware:s0
 genfscon sysfs /devices/platform/19000000.aoc/services u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/odm/odm:btbcm/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/28000000.mali/kprcs u:object_r:sysfs_gpu:s0
 genfscon sysfs /module/drm/parameters/vblankoffdelay u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/11210000.usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/19000000.aoc/wakeup u:object_r:sysfs_wakeup:s0
