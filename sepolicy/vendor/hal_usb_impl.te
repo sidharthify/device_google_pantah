@@ -1,3 +1,6 @@
 type hal_usb_impl, domain;
+hal_server_domain(hal_usb_impl, hal_usb)
+hal_server_domain(hal_usb_impl, hal_usb_gadget)
+
 init_daemon_domain(hal_usb_impl)
 
