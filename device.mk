@@ -12,6 +12,7 @@ TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/kernel-headers
 TARGET_PREBUILT_KERNEL := device/google/pantah-kernels/6.1/Image.lz4
 
 PRODUCT_PROPERTY_OVERRIDES += \
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
 PRODUCT_PRODUCT_PROPERTIES += \
 TARGET_BOARD_PLATFORM := gs201
 
@@ -545,6 +546,12 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringOverlay
+
+# VINTF
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
