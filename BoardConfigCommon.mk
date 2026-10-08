@@ -63,6 +63,7 @@ TARGET_COPY_OUT_PRODUCT := product
 # system_ext.img
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
+# persist.img
 BOARD_SUPER_PARTITION_SIZE := 8531214336
 BOARD_SUPER_PARTITION_GROUPS := google_dynamic_partitions
 # Set size to BOARD_SUPER_PARTITION_SIZE - overhead (4MiB) (b/182237294)
