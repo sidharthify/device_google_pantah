@@ -137,6 +137,9 @@ BOARD_KERNEL_CMDLINE += at24.write_timeout=100
 # Enable larger logbuf
 BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 
+# Protected VM firmware
+BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
+
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
