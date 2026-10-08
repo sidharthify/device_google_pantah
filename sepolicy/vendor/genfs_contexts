@@ -44,6 +44,7 @@ genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/osc2_clk_kh
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_idle u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/panel_name u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/panel_name u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/19000000.aoc/com.google.usf.non_wake_up/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/1c2c0000.drmdsim.0/backlight u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/1c2d0000.drmdsim/1c2d0000.drmdsim.0/backlight u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/181c0000.spi/spi_master/spi17/spi17.0/st33spi u:object_r:sysfs_st33spi:s0
