@@ -2,5 +2,8 @@ type vendor_ims_app, domain;
 
 app_domain(vendor_ims_app)
 
+binder_call(vendor_ims_app, rild)
+
 allow vendor_ims_app app_api_service:service_manager find;
 allow vendor_ims_app hal_exynos_rild_hwservice:hwservice_manager find;
+allow vendor_ims_app radio_service:service_manager find;
