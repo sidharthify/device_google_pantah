@@ -33,6 +33,8 @@ genfscon sysfs /devices/platform/19000000.aoc/control/logging_wakeup u:object_r:
 genfscon sysfs /devices/platform/19000000.aoc/control/hotword_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/audio_wakeup u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/19000000.aoc/control/usf_wakeup u:object_r:sysfs_aoc_dumpstate:s0
+genfscon sysfs /devices/platform/1c240000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/1c242000.drmdecon/early_wakeup u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/14700000.ufs/device_descriptor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/health_descriptor u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/slowio_write_cnt u:object_r:sysfs_scsi_devices_0000:s0
