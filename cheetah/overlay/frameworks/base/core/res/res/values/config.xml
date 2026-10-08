@@ -51,6 +51,7 @@
 
     <!-- Display cutout configuration -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M 677,72
         a 43,43 0 1 0 86,0
         a 43,43 0 1 0 -86,0
         Z
