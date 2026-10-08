@@ -1,3 +1,5 @@
+get_prop(vendor_init, vendor_trusty_storage_prop)
+
 set_prop(vendor_init, vendor_battery_defender_prop)
 set_prop(vendor_init, vendor_carrier_prop)
 set_prop(vendor_init, vendor_cbd_prop)
