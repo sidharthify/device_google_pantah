@@ -11,3 +11,5 @@ allow hal_usb_gadget_impl functionfs:dir { watch watch_reads };
 allow hal_usb_gadget_impl proc_interrupts:file r_file_perms;
 allow hal_usb_gadget_impl proc_irq:dir r_dir_perms;
 allow hal_usb_gadget_impl proc_irq:file w_file_perms;
+allow hal_usb_gadget_impl sysfs_batteryinfo:dir r_dir_perms;
+allow hal_usb_gadget_impl sysfs_batteryinfo:file rw_file_perms;
