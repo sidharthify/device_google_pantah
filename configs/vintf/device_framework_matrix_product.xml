@@ -90,24 +90,6 @@
         </interface>
     </hal>
     <hal format="aidl">
-        <name>com.google.input</name>
-        <version>2-6</version>
-        <interface>
-            <name>ITouchContextService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl">
-        <name>com.google.input</name>
-        <version>6</version>
-        <interface>
-            <name>ITwoshayFileDumpService</name>
-            <instance>touchflow_default</instance>
-            <instance>touchflow_outer</instance>
-            <instance>twoshay</instance>
-        </interface>
-    </hal>
-    <hal format="aidl">
         <name>com.google.pixel.camera.connectivity.hal.provider</name>
         <interface>
             <name>ICameraProvider</name>
@@ -127,14 +109,6 @@
         <version>2.1</version>
         <interface>
             <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.google.audiometricext</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAudioMetricExt</name>
             <instance>default</instance>
         </interface>
     </hal>
