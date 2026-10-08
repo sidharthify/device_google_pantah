@@ -126,6 +126,7 @@
 /vendor/bin/hw/android\.hardware\.security\.keymint-service\.trusty u:object_r:hal_keymint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.usb-service u:object_r:hal_usb_impl_exec:s0
 /vendor/bin/hw/android\.hardware\.usb\.gadget-service u:object_r:hal_usb_gadget_impl_exec:s0
+/vendor/bin/hw/disable_contaminant_detection\.sh u:object_r:disable-contaminant-detection-sh_exec:s0
 /vendor/bin/hw/google\.hardware\.media\.c2@1\.0-service u:object_r:mediacodec_google_exec:s0
 /vendor/bin/hw/vendor\.google\.radioext@1\.0-service u:object_r:hal_radioext_default_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.3-service-vendor u:object_r:hal_wlc_exec:s0
