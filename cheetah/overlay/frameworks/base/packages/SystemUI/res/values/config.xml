@@ -64,3 +64,7 @@
 
     <bool name="config_enableDisplayCutoutProtection">true</bool>
 
+    <!-- The time (in ms) needed to trigger the lock icon view's long-press affordance -->
+    <integer name="config_lockIconLongPress" translatable="false">100</integer>
+</resources>
+
