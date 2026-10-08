@@ -26,6 +26,8 @@
     <device name="cp2ap_wakeup">
         <subsystem>Cellular_data</subsystem>
     </device>
+        <subsystem>Sound_trigger</subsystem>
+    </device>
     <device name="MAILBOX_AOCA322APx100">
         <subsystem>Sensor</subsystem>
     </device>
