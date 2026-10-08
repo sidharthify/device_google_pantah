@@ -111,6 +111,8 @@ genfscon sysfs /devices/platform/28000000.mali/dvfs_period u:object_r:sysfs_gpu:
 genfscon sysfs /devices/platform/11920000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock u:object_r:sysfs_display:s0
+genfscon sysfs /devices/platform/14520000.pcie/link_stats u:object_r:sysfs_exynos_pcie_stats:s0
+genfscon sysfs /devices/platform/11920000.pcie/link_stats u:object_r:sysfs_exynos_pcie_stats:s0
 genfscon sysfs /module/trusty_core/parameters/use_high_wq u:object_r:sysfs_trusty:s0
 genfscon sysfs /devices/platform/cpif/modem/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14700000.ufs/manual_gc u:object_r:sysfs_scsi_devices_0000:s0
