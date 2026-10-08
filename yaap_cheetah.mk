@@ -1,3 +1,5 @@
+#
+# SPDX-FileCopyrightText: The Android Open Source Project
 # SPDX-FileCopyrightText: 2025 The LineageOS Project
 # SPDX-FileCopyrightText: 2025 Yet Another AOSP Project
 # SPDX-FileCopyrightText: 2025 The Calyx Institute
@@ -44,10 +46,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit default art config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/default_art_config.mk)
 
+# Inherit from the device
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
+PRODUCT_DEVICE := $(DEVICE_CODENAME)
+PRODUCT_MANUFACTURER := Google
 PRODUCT_MODEL := Pixel 7 Pro
 PRODUCT_NAME := yaap_$(DEVICE_CODENAME)
 
