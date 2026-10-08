@@ -205,6 +205,8 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Trusty (KM, GK, Storage)
 $(call inherit-product, system/core/trusty/trusty-storage.mk)
+$(call inherit-product, system/core/trusty/trusty-base.mk)
+
 # Storage: for factory reset protection feature
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.frp.pst=/dev/block/by-name/frp
