@@ -154,6 +154,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
 	mkdtimg
 
+# CHRE
+## HAL
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.context_hub.xml
 
