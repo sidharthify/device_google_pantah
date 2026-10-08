@@ -83,10 +83,12 @@ genfscon sysfs /devices/platform/19000000.aoc/coredump_count u:object_r:sysfs_ao
 genfscon sysfs /devices/platform/28000000.mali/power_policy u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/1c240000.drmdecon/dqe0/atc u:object_r:sysfs_display:s0
 genfscon sysfs /devices/platform/1c241000.drmdecon/dqe1/atc u:object_r:sysfs_display:s0
+genfscon sysfs /module/trusty_virtio/parameters/use_high_wq u:object_r:sysfs_trusty:s0
 genfscon sysfs /devices/platform/19000000.aoc/restart_count u:object_r:sysfs_aoc_dumpstate:s0
 genfscon sysfs /devices/platform/11920000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14520000.pcie/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/1c2c0000.drmdsim/hs_clock u:object_r:sysfs_display:s0
+genfscon sysfs /module/trusty_core/parameters/use_high_wq u:object_r:sysfs_trusty:s0
 genfscon sysfs /devices/platform/cpif/modem/power_stats u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/14700000.ufs/manual_gc u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/14700000.ufs/req_stats u:object_r:sysfs_scsi_devices_0000:s0
