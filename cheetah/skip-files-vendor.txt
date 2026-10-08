@@ -1027,6 +1027,15 @@ etc/vintf/manifest/memtrack.xml
 lib64/libmemtrack-pixel.so
 lib64/vendor.google.audiometricext@1.0.so
 
+# Rust binaries
+# dump_modem only runs from the dropped dumpstate HAL and gpuflag only
+# supports Imagination GPUs, while the Rust runtime they need collides
+# with the one Android 17 builds for vendor
+bin/dump/dump_modem
+bin/gpuflag
+etc/init/gpuflag.rc
+lib64/libgpuflag_aconfig_rust.dylib.so
+
 # Secure element
 lib/android.hardware.secure_element.thales.libse.so
 lib/libstpreprocess21.so
