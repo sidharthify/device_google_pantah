@@ -1,3 +1,4 @@
+persist.vendor.camera. u:object_r:vendor_camera_prop:s0
 persist.vendor.config. u:object_r:vendor_persist_config_default_prop:s0
 persist.vendor.modem. u:object_r:vendor_modem_prop:s0
 persist.vendor.pixellogger. u:object_r:vendor_logger_prop:s0
@@ -18,6 +19,7 @@ ro.vendor.hwc.drm.device u:object_r:vendor_display_prop:s0
 ro.vendor.sys. u:object_r:vendor_ro_sys_default_prop:s0
 ro.vendor.sys.modem. u:object_r:vendor_modem_prop:s0
 vendor.battery.defender. u:object_r:vendor_battery_defender_prop:s0
+vendor.camera.fatp. u:object_r:vendor_camera_fatp_prop:s0
 vendor.debug.ssrdump. u:object_r:vendor_ssrdump_prop:s0
 vendor.fingerprint. u:object_r:vendor_fingerprint_prop:s0
 vendor.gf. u:object_r:vendor_fingerprint_prop:s0
