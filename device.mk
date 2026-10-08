@@ -45,10 +45,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 
-# Configure DSDS by default
-
-# Set the Bluetooth Class of Device
-
 # HWUI
 TARGET_USES_VULKAN = true
 
@@ -103,8 +99,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	checkpoint_gc
 
-# Vendor verbose logging default property
-
 # Touch
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
@@ -115,16 +109,12 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
 	frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml \
 	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
-	frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml\
+	frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
 	frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
-	frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
-# (See b/240652154)
-ifneq ($(DISABLE_SENSOR_BARO_PROX_HIFI),true)
-PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
 	frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
 	frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
 	frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml
-endif
 
 # Add sensor HAL AIDL product packages
 PRODUCT_PACKAGES += android.hardware.sensors-service.multihal
@@ -134,10 +124,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # eSIM MEP Feature
-ifneq ($(DISABLE_TELEPHONY_EUICC),true)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.mep.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.mep.xml
-endif
 
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
 
@@ -211,33 +199,21 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml
 
-# (See b/239142680, b/211840489, b/225749853)
-ifneq ($(DISABLE_CAMERA_FS_AF),true)
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml
-else
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
-endif
-
-PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
 	frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
-	frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml\
-	frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml\
+	frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
+	frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-	frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
+	frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml
 
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
+	frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
-ifeq ($(USE_TABLET_BT_COD),true)
-PRODUCT_CHARACTERISTICS := nosdcard,tablet
-else
 PRODUCT_CHARACTERISTICS := nosdcard
-endif
 
 PRODUCT_PACKAGES += hostapd
 PRODUCT_PACKAGES += wpa_supplicant
@@ -246,10 +222,6 @@ PRODUCT_PACKAGES += wpa_supplicant.conf
 WIFI_PRIV_CMD_UPDATE_MBO_CELL_STATUS := enabled
 
 $(call soong_config_set,bigo,soc,gs201)
-
-# 1. Codec 2.0
-
-# 2. OpenMAX IL
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -278,16 +250,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	Iwlan
 
-ifneq ($(BOARD_WITHOUT_RADIO),true)
-
 PRODUCT_PACKAGES += \
     android.hardware.location.gps.prebuilt.xml
 
-endif
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-
-## Audio properties
 
 # vndservicemanager and vndservice no longer included in API 30+, however needed by vendor code.
 # See b/148807371 for reference
@@ -341,11 +307,9 @@ DEVICE_MANIFEST_FILE += \
 DEVICE_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
-ifneq ($(BOARD_WITHOUT_RADIO),true)
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.carrierlock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.carrierlock.xml
-endif
 
 # Android Verified Boot
 PRODUCT_COPY_FILES += \
