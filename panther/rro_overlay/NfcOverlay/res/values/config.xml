@@ -30,3 +30,5 @@
     <item>38</item>
   </integer-array>
   <integer-array name="antenna_y">
+  <bool name="nfc_observe_mode_supported">true</bool>
+</resources>
