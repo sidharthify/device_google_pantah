@@ -43,6 +43,7 @@ lib_fixups: lib_fixups_user_type = {
         'android.frameworks.stats-V3-ndk',
         'com.google.edgetpu_app_service-V3-ndk',
         'com.google.edgetpu_vendor_service-V2-ndk',
+        'libtinycompress',
     ): lib_fixup_vendor_suffix,
     'android.hardware.sensors-V2-ndk': lib_fixup_remove,
 }
@@ -65,6 +66,16 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('android.frameworks.stats-V3-ndk.so', 'android.frameworks.stats-V3-ndk_vendor.so'),
     'vendor/lib64/android.frameworks.stats-V3-ndk_vendor.so': blob_fixup()
+        .fix_soname(),
+    (
+        'vendor/lib/hw/audio.primary.gs201.so',
+        'vendor/lib64/hw/audio.primary.gs201.so',
+    ): blob_fixup()
+        .replace_needed('libtinycompress.so', 'libtinycompress_vendor.so'),
+    (
+        'vendor/lib/libtinycompress_vendor.so',
+        'vendor/lib64/libtinycompress_vendor.so',
+    ): blob_fixup()
         .fix_soname(),
 }  # fmt: skip
 
@@ -108,6 +119,13 @@ def fix_vendor_file_list(file_list: FileList):
     file_list.get_file('vendor/lib64/android.frameworks.stats-V3-ndk.so').set_dst(
         'vendor/lib64/android.frameworks.stats-V3-ndk_vendor.so'
     )
+
+    # YAAP's libtinycompress needs kernel headers built from kernel source,
+    # ship the stock one the audio HAL was built against instead
+    for lib in ('lib', 'lib64'):
+        file_list.get_file(f'vendor/{lib}/libtinycompress.so').set_dst(
+            f'vendor/{lib}/libtinycompress_vendor.so'
+        )
 
     module_suffix_file_paths = [
         'vendor/lib/com.google.edgetpu_app_service-V3-ndk.so',

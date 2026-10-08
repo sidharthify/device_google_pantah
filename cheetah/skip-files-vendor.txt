@@ -667,10 +667,8 @@ lib/modules
 lib/libaudioroutev2.so
 lib/libexpat.so
 lib/libpower.so
-lib/libtinycompress.so
 lib64/libaudioroutev2.so
 lib64/libexpat.so
-lib64/libtinycompress.so
 
 # Bluetooth
 lib64/android.hardware.bluetooth-V1-ndk.so
