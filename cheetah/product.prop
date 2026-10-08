@@ -1,3 +1,5 @@
 bluetooth.leaudio.dual_bidirection_swb.supported=false
+bluetooth.leaudio.toggle_visible_for_asha=false
+bluetooth.profile.hap.enabled_by_default=false
 persist.bluetooth.leaudio.notify.idle.during.call=true
 persist.settings.large_screen_opt.enabled=false
