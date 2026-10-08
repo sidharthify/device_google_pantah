@@ -2,6 +2,8 @@ type vendor_ims_app, domain;
 
 app_domain(vendor_ims_app)
 
+net_domain(vendor_ims_app)
+
 binder_call(vendor_ims_app, rild)
 
 get_prop(vendor_ims_app, vendor_imssvc_prop)
