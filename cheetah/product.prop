@@ -1,2 +1,3 @@
+bluetooth.leaudio.dual_bidirection_swb.supported=false
 persist.bluetooth.leaudio.notify.idle.during.call=true
 persist.settings.large_screen_opt.enabled=false
