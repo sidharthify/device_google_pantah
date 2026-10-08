@@ -1,3 +1,7 @@
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlayPanther
+
 # WiFi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlay2022_P10
