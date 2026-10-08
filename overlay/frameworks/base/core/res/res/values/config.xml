@@ -274,3 +274,4 @@
         <item>"com.android.phone"</item>
     </string-array>
 
+    <!-- Enable variable refresh rate when typing. -->
