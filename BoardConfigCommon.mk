@@ -219,6 +219,7 @@ else
 BOARD_VENDOR_KERNEL_MODULES := $(KERNEL_MODULES)
 endif
 
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_MODULE_DIR)/system_dlkm.modules.load 2>/dev/null))
 BOARD_SYSTEM_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notdir $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)))
 
 # Battery options
