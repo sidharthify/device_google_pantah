@@ -1,4 +1,5 @@
 android.hardware.drm.IDrmFactory/widevine u:object_r:hal_drm_service:s0
+android.hardware.media.c2.IComponentStore/default9 u:object_r:hal_codec2_service:s0
 android.hardware.neuralnetworks.IDevice/google-edgetpu u:object_r:edgetpu_nnapi_service:s0
 android.hardware.security.keymint.IKeyMintDevice/strongbox u:object_r:hal_keymint_service:s0
 android.hardware.security.keymint.IRemotelyProvisionedComponent/strongbox u:object_r:hal_remotelyprovisionedcomponent_service:s0

@@ -372,7 +372,7 @@
 /vendor/bin/hw/gpsd u:object_r:gpsd_exec:s0
 /vendor/bin/hw/lhd u:object_r:lhd_exec:s0
 /vendor/bin/hw/scd u:object_r:scd_exec:s0
-/vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/vendor\.dolby\.media\.c2-default-service u:object_r:mediacodec_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger-default u:object_r:hal_wireless_charger_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger\.service-default u:object_r:hal_wlcservice_exec:s0
 /vendor/bin/shared_modem_platform u:object_r:modem_svc_sit_exec:s0
